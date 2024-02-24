@@ -19,11 +19,11 @@ Forschungsfrage: Is WASM advantageous over JavaScript from an efficiency perspec
 3. Methodology
 	3.1 Literature Review J
 	3.2 Laboratory Experiment (Mads, stichpuntkartig)
-		3.2.1 Experimental Design (Theorie)
+		3.2.1 Experimental Design (Theorie) J
 		3.2.2 Setup (Wie bauen wir die Struktur/Webseiten auf, welche Backend Frameworks, ...)
 		3.2.3 Procedure (Ausführung, auf Überschneidung mit 3.2.2 achten)
 	3.3 Research Project
-		3.3.1 Github Repository N
+		3.3.1 Github N
 		3.3.2 Latex Project N
 4. Results
 5. Discussion
