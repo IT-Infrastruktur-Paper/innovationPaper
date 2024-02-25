@@ -243,7 +243,7 @@ Und die folgenden Zeilen einkommentieren und ggf. anpassen.
 Sollte ein Sperrvermerk für die Arbeit notwendig sein, so kann dieser durch Einkommentieren der folgenden Zeile aktiviert werden:
 
 ```latex
-\input{kapitel/anhang/sperrvermerk}
+\input{chapter/anhang/sperrvermerk}
 ```
 
 Die Angaben zu Titel der Arbeit und Name der Firma werden dabei aus den Metadaten entnommen.
