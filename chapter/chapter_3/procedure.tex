@@ -1,7 +1,42 @@
-The structure of the test cases was always the same. The respective test is started via a button, which opens a pop-up window in which the input for the test is entered. The input is then confirmed and the corresponding code is executed:
+The structure of each test case was identical. The respective test is started via a button, which opens a pop-up window in which the input for the test is entered. The input is then confirmed and the following code is executed:
+\begin{verbatim}
+document.addEventListener("DOMContentLoaded", function () {
+    init();
+    console.log("Loaded");
+    for (const [testName, testFunctions] of Object.entries(funcs)) {
+        for (const [index, implementation] of testFunctions.entries()) {
+            const button = document.createElement("button");
+            button.textContent = `Run ${testName} with ${rust_js[index]}`;
+            button.addEventListener("click", () => {
+                const input = prompt("Input:");
+                let totalTime = [];
+                let output;
+                for (let i = 0; i < runs; i++) {
+                    const startTime = performance.now();
+                    output = implementation(input);
+                    const endTime = performance.now();
+                    console.log(output);
+                    const elapsedTime = endTime - startTime;
+                    totalTime.push(elapsedTime);
+                    console.log(`Run ${i + 1}: ${elapsedTime} milliseconds`);
+                }
+                const averageTime = totalTime.reduce((a,b) => a+b, 0) / runs;
+                console.log('Total time:', totalTime)
+                console.log(`Function ${testName}, ${rust_js[index]} with input ${input} took ${averageTime} miliseconds to execute`);
+            });
+            document.body.appendChild(button);
+        }
+    }
+});
+\end{verbatim}
+caption einfügen
 
-The result is output via the command line and then recorded in a table.
-We started the first test with the input 100000000 and ran the test ten times.
-We started the second test with the input 100000000 and also ran it ten times.
-We started the third test with the input 30000 and ran it five times.
-In addition, we calculated the average runtime, the standard deviation and the factor by which WASM or JavaScript is executed faster than the other for all tests, with the latter referring to the average runtime.
+In order to allow a structured testing procedure, the tests were executed in the following order:
+\begin{enumerate}
+\item The first test was started with an input of 100.000.000 and was repeated 10 times for JavaScript and 10 times for WASM.
+\item The second test was started with an input of 100.000.000 and was repeated 10 times for JavaScript and 10 times for WASM.
+\item We started the third test with an input of 30.000 and ran it five times each for JavaScript and for WASM.
+\end{enumerate}
+The result of each test is output via the command line and then recorded in a table. The table will be presented later on in the chapter results.
+
+In addition, the average runtime, standard deviation and factor by which WASM is executed faster or slower than JavaScript, relative to the average runtime, was calculated and added to the table.
