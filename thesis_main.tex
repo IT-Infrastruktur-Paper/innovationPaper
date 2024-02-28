@@ -71,6 +71,11 @@
 \setlength{\marginparwidth}{2cm}
 \usepackage[all]{nowidow}
 
+\addto\captionsngerman{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Table of Contents}%
+}
+
 %-----------------------------------
 % Farbdefinitionen
 %-----------------------------------
@@ -240,7 +245,7 @@ mincrossrefs = 1
 % Glossar
 %-----------------------------------
 \usepackage{glossaries}
-\glstoctrue %Auskommentieren, damit das Glossar nicht im Inhaltsverzeichnis angezeigt wird.
+%\glstoctrue %Auskommentieren, damit das Glossar nicht im Inhaltsverzeichnis angezeigt wird.
 \makenoidxglossaries
 \input{abkuerzungen/glossar}
 
@@ -327,12 +332,6 @@ mincrossrefs = 1
 % Titlepage
 %-----------------------------------
 \input{chapter/coverpage}
-
-%-----------------------------------
-% Vorwort (optional; bei Verwendung beide Zeilen entkommentieren und unter Inhaltsverzeichnis setcounter entsprechend anpassen)
-%-----------------------------------
-%\input{chapter/vorwort/vorwort}
-%\newpage
 
 %-----------------------------------
 % Inhaltsverzeichnis
