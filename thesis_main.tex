@@ -326,12 +326,12 @@ mincrossrefs = 1
 %-----------------------------------
 % Titlepage
 %-----------------------------------
-\input{kapitel/titelseite}
+\input{chapter/coverpage}
 
 %-----------------------------------
 % Vorwort (optional; bei Verwendung beide Zeilen entkommentieren und unter Inhaltsverzeichnis setcounter entsprechend anpassen)
 %-----------------------------------
-%\input{kapitel/vorwort/vorwort}
+%\input{chapter/vorwort/vorwort}
 %\newpage
 
 %-----------------------------------
@@ -383,7 +383,7 @@ mincrossrefs = 1
 %-----------------------------------
 % Sperrvermerk
 %-----------------------------------
-%\input{kapitel/anhang/sperrvermerk}
+%\input{chapter/anhang/sperrvermerk}
 
 %-----------------------------------
 % Seitennummerierung auf arabisch und ab 1 beginnend umstellen
@@ -392,10 +392,10 @@ mincrossrefs = 1
 \setcounter{page}{1}
 
 %-----------------------------------
-% Kapitel / Inhalte
+% chapter / Inhalte
 %-----------------------------------
-% Die Kapitel werden über folgende Datei eingebunden
-\input{skripte/kapitelUebersicht.tex}
+% Die chapter werden über folgende Datei eingebunden
+\input{skripte/chapterOverview.tex}
 
 %-----------------------------------
 % Apendix / Anhang
@@ -412,7 +412,7 @@ mincrossrefs = 1
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}} %
 	\renewcommand{\thesection}{\AppendixName\ \arabic{section}}
 	\renewcommand\thesubsection{\AppendixName\ \arabic{section}.\arabic{subsection}}
-	\input{kapitel/anhang/anhang}
+	\input{chapter/anhang/anhang}
 \end{appendices}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
 
@@ -468,5 +468,5 @@ mincrossrefs = 1
 %\printbibliography[type=online,heading=bibintoc,title={\headingNameInternetSources}]
 \printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
 
-\input{kapitel/anhang/erklaerung}
+\input{chapter/anhang/erklaerung}
 \end{document}
