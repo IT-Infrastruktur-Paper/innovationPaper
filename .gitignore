@@ -24,6 +24,3 @@
 
 # IDEs
 .texpadtmp/
-
-# PDF nur temporär
-*.pdf
