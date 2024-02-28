@@ -75,6 +75,9 @@
 	\renewcommand{\contentsname}{Table of Contents}
 	\renewcommand{\listfigurename}{List of Figures}
 	\renewcommand{\listtablename}{List of Tables}
+	\renewcommand{\appendixname}{Appendix} 
+	\appendixtitleon    % puts \appendixname before each appendix title
+	%\renewcommand{\abbreHeadingName}{List of Abbreviations}
 }
 
 %-----------------------------------
@@ -353,7 +356,7 @@ mincrossrefs = 1
 %-----------------------------------
 % Falls das Abkürzungsverzeichnis nicht im Inhaltsverzeichnis angezeigt werden soll
 % dann folgende Zeile auskommentieren.
-\addcontentsline{toc}{section}{\abbreHeadingName}
+\addcontentsline{toc}{section}{List of Abbreviations}
 \input{abkuerzungen/acronyms}
 \newpage
 
@@ -379,20 +382,20 @@ mincrossrefs = 1
 % Apendix / Anhang
 %-----------------------------------
 \newpage
-\section*{\AppendixName} %Überschrift "Anhang", ohne Nummerierung
-\addcontentsline{toc}{section}{\AppendixName} %Den Anhang ohne Nummer zum Inhaltsverzeichnis hinzufügen
+\section*{Appendices} %Überschrift "Anhang", ohne Nummerierung
+\addcontentsline{toc}{section}{Appendices} %Den Anhang ohne Nummer zum Inhaltsverzeichnis hinzufügen
 
 \begin{appendices}
-% Nachfolgende Änderungen erfolgten aufgrund von Issue 163
-\makeatletter
-\renewcommand\@seccntformat[1]{\csname the#1\endcsname:\quad}
-\makeatother
-\addtocontents{toc}{\protect\setcounter{tocdepth}{0}} %
-	\renewcommand{\thesection}{\AppendixName\ \arabic{section}}
-	\renewcommand\thesubsection{\AppendixName\ \arabic{section}.\arabic{subsection}}
-	\input{chapter/anhang/anhang}
-\end{appendices}
-\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+	% Nachfolgende Änderungen erfolgten aufgrund von Issue 163
+	\makeatletter
+	\renewcommand\@seccntformat[1]{\csname the#1\endcsname:\quad}
+	\makeatother
+	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}} %
+		\renewcommand{\thesection}{\appendixname\ \arabic{section}}
+		\renewcommand{\thesubsection}{\appendixname\ \arabic{section}.\arabic{subsection}}
+		\input{chapter/appendices/appendices}
+	\end{appendices}
+	\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
 
 %-----------------------------------
 % Literaturverzeichnis
@@ -434,7 +437,7 @@ mincrossrefs = 1
 % noch weitere Arten von Zusammenfassungen eines Literaturverzeichnisse zu
 % erzeugen.
 % Beispiel: [type=book,type=article]
-\printbibliography[nottype=online,heading=bibintoc,title={\langde{Literaturverzeichnis}\langen{Bibliography}}]
+\printbibliography[nottype=online,heading=bibintoc,title={References}]
 
 % neue Seite für Internetquellen-Verzeichnis
 \newpage
@@ -446,5 +449,5 @@ mincrossrefs = 1
 %\printbibliography[type=online,heading=bibintoc,title={\headingNameInternetSources}]
 \printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
 
-\input{chapter/anhang/erklaerung}
+\input{chapter/appendices/declaration}
 \end{document}
