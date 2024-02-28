@@ -9,7 +9,7 @@ In order to do all tests in one place, a locally hosted website was created. The
     \includegraphics[width=1\textwidth]{website}
 \end{figure}
 
-Each button executes one of the tests, three buttons are for the JavaScript tests and the other three for the WebAssembly tests. Before each test is executed, an input window appears and asks the user to enter a number. What the number represents depends on the test that is executed.
+Each button executes one of the tests, three buttons are for the JavaScript tests and the other three for the WASM tests. Before each test is executed, an input window appears and asks the user to enter a number. What the number represents depends on the test that is executed.
 
 The code of the main page of the website looks as follows:
 \begin{verbatim}
@@ -177,7 +177,7 @@ pub fn wasm_create_elements(count: usize) {
         // Set styles for the div element
         div.set_attribute("style", "border: 2px solid #000; background-color: #e0e0e0; margin: 5px;").unwrap();
         // Set text content for the div element
-        div.set_text_content(Some("Hello, WebAssembly!"));
+        div.set_text_content(Some("Hello, WASM!"));
         // Append the div element to the document body
         document.body().unwrap().append_child(&div).unwrap();
     }
@@ -187,4 +187,4 @@ caption einfügen
 
 In this case the two code snippet again implement the same procedure. Unlike in the previous tests, there are no performance-relevant differences between JavaScript and WASM. The difference in the code emerge from the syntax of the two languages. However, one difference needs to be highlighted. Rust encourages explicit error handling. Since this code will not be deployed to regular users, explicit error handling is not necessary and is avoided by using the `.unwrap()` function.
 
-One aspect of all Rust-specific tests is the \texttt{\#[wasm\_bindgen]} command before every function which is described by mdn web docks as follows "wasm-pack uses wasm-bindgen, another tool, to provide a bridge between the types of JavaScript and Rust. It allows JavaScript to call a Rust API with a string, or a Rust function to catch a JavaScript exception" (!Quelle mozilla compiling from rust to webassembly). This command is essential for the main.js to access the Rust functions when a test is triggered, therefore it is another important of this chapter. 
+One aspect of all Rust-specific tests is the \texttt{\#[wasm\_bindgen]} command before every function which is described by mdn web docks as follows "wasm-pack uses wasm-bindgen, another tool, to provide a bridge between the types of JavaScript and Rust. It allows JavaScript to call a Rust API with a string, or a Rust function to catch a JavaScript exception" (!Quelle mozilla compiling from rust to WASM). This command is essential for the main.js to access the Rust functions when a test is triggered, therefore it is another important of this chapter. 
