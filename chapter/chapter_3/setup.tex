@@ -22,13 +22,13 @@ The code of the main page of the website looks as follows:
     </head>
     <body>
         <h1>Benchmarks</h1>
-        <script type="module" src="./main.js"></script>
+        <script type="module" src="./main.JavaScript"></script>
     </body>
 </html>
 \end{verbatim}
 input caption here
 
-This basic HTML Code defines the main structure of the website. In terms of styling, there is none. The main task of this code is to link the main.js file.  
+This basic HTML Code defines the main structure of the website. In terms of styling, there is none. The main task of this code is to link the main.JavaScript file.  
 
 \textbf{Setup First Test - CPU Benchmark} \newline
 Next is the setup of the first test, which is a CPU Benchmark test based on the Sieve of Eratosthenes algorithm. In the field of computer science this algorithm is commonly used to measure computer performance. "The time complexity of calculating all primes below n in the random access machine model is \( O(n \log \log n) \) operations, a direct consequence of the fact that the prime harmonic series asymptotically approaches \( \log \log n\). It has an exponential time complexity with regard to input size, though, which makes it a pseudo-polynomial algorithm. The basic algorithm requires \( O(n) \) of memory." (!Quelle wikipedia Sieve of Eratosthenes).
@@ -36,7 +36,7 @@ The input parameter for this test determines the limit up to where the algorithm
 
 The following code was used to execute the algorithm with JavaScript:
 \begin{verbatim}
-function js_sieve(limit) {
+function JavaScript_sieve(limit) {
     // Create an array to track whether each number is prime
     const sieve = new Array(Number(limit) + 1).fill(true);
     // 0 and 1 are not prime numbers, so mark them as false
@@ -106,7 +106,7 @@ The second test uses a multitude of read and write operations as a stress test f
 
 The following code was used to execute the algorithm with JavaScript:
 \begin{verbatim}
-function js_ram_test(size) {
+function JavaScript_ram_test(size) {
     const array = new Array(size);
     // Write operation
     for (let i = 0; i < size; i++) {
@@ -144,7 +144,7 @@ The final test was about DOM manipulation and was implemented because JavaScript
 
 The following code was used to execute the algorithm with JavaScript:
 \begin{verbatim}
-function js_create_elements(count) {
+function JavaScript_create_elements(count) {
     // Get a reference to the document body
     const body = document.body;
     // Iterate 'count' times to create elements
@@ -187,4 +187,4 @@ caption einfügen
 
 In this case the two code snippet again implement the same procedure. Unlike in the previous tests, there are no performance-relevant differences between JavaScript and WASM. The difference in the code emerge from the syntax of the two languages. However, one difference needs to be highlighted. Rust encourages explicit error handling. Since this code will not be deployed to regular users, explicit error handling is not necessary and is avoided by using the `.unwrap()` function.
 
-One aspect of all Rust-specific tests is the \texttt{\#[wasm\_bindgen]} command before every function which is described by mdn web docks as follows "wasm-pack uses wasm-bindgen, another tool, to provide a bridge between the types of JavaScript and Rust. It allows JavaScript to call a Rust API with a string, or a Rust function to catch a JavaScript exception" (!Quelle? mozilla compiling from rust to WASM). This command is essential for the main.js to access the Rust functions when a test is triggered, therefore it is another important of this chapter. 
+One aspect of all Rust-specific tests is the \texttt{\#[wasm\_bindgen]} command before every function which is described by mdn web docks as follows "wasm-pack uses wasm-bindgen, another tool, to provide a bridge between the types of JavaScript and Rust. It allows JavaScript to call a Rust API with a string, or a Rust function to catch a JavaScript exception" (!Quelle? mozilla compiling from rust to WASM). This command is essential for the main.JavaScript to access the Rust functions when a test is triggered, therefore it is another important of this chapter. 
