@@ -72,8 +72,9 @@
 \usepackage[all]{nowidow}
 
 \addto\captionsngerman{% Replace "english" with the language you use
-  \renewcommand{\contentsname}%
-    {Table of Contents}%
+	\renewcommand{\contentsname}{Table of Contents}
+	\renewcommand{\listfigurename}{List of Figures}
+	\renewcommand{\listtablename}{List of Tables}
 }
 
 %-----------------------------------
@@ -236,12 +237,6 @@ mincrossrefs = 1
 \usepackage[printonlyused]{acronym}
 
 %-----------------------------------
-% Symbolverzeichnis
-%-----------------------------------
-% Quelle: https://www.namsu.de/Extra/pakete/Listofsymbols.pdf
-\usepackage[final]{listofsymbols}
-
-%-----------------------------------
 % Glossar
 %-----------------------------------
 \usepackage{glossaries}
@@ -360,17 +355,6 @@ mincrossrefs = 1
 % dann folgende Zeile auskommentieren.
 \addcontentsline{toc}{section}{\abbreHeadingName}
 \input{abkuerzungen/acronyms}
-\newpage
-
-%-----------------------------------
-% Symbolverzeichnis
-%-----------------------------------
-% In Overleaf führt der Einsatz des Symbolverzeichnisses zu einem Fehler, der aber ignoriert werdne kann
-% Falls das Symbolverzeichnis nicht im Inhaltsverzeichnis angezeigt werden soll
-% dann folgende Zeile auskommentieren.
-\phantomsection\addcontentsline{toc}{section}{\symheadingname}
-\input{skripte/symbolDef}
-\listofsymbols
 \newpage
 
 %-----------------------------------
