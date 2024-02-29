@@ -63,7 +63,7 @@ function JavaScript_sieve(limit) {
     return primes;
 }
 \end{lstlisting}
-
+\newpage
 The following code was used to execute the algorithm with WASM, coded in Rust:
 \begin{lstlisting}[language=Rust, caption={Sieve of Eratosthenes in Rust, source: self-coded}]
 #[wasm_bindgen]
@@ -100,7 +100,7 @@ Both code snippets in essence implement the same algorithm, just in different la
 
 \textbf{Setup Second Test - RAM Speed} \newline
 The second test uses a multitude of read and write operations as a stress test for the RAM speed. The input parameter for this test determines the size of the iterable to perform the read and write operations on.
-
+\newpage
 The following code was used to execute the stresstest with JavaScript:
 \begin{lstlisting}[language=JavaScript, caption={RAM stresstest in JavaScript, source: self-coded}]
 function JavaScript_ram_test(size) {
@@ -136,7 +136,7 @@ As with the first test, the two code snippets, in essence, execute the same oper
 
 \textbf{Setup Second Test - DOM manipulation} \newline
 The final test was about DOM manipulation and was implemented because JavaScript "makes it relatively easy to manipulate the DOM (i.e., add, modify, and remove elements), but does nothing to promote doing so efficiently"\footcite{peterson_10_nodate}. Therefore this test investigates the DOM manipulation with JavaScript and WASM to see which operates more efficiently. The input parameter for this test determines the number of div elements that should be created and shown on the screen.
-
+\newpage
 The following code was used to execute the DOM manipulations with JavaScript:
 \begin{lstlisting}[language=JavaScript, caption={DOM manipulation in JavaScript, source: self-coded}]
 function JavaScript_create_elements(count) {
