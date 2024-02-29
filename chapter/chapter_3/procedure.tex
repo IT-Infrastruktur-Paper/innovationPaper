@@ -1,5 +1,5 @@
 The structure of each test case was identical. The respective test is started via a button, which opens a pop-up window in which the input for the test is entered. The input is then confirmed and the following code is executed:
-\begin{verbatim}
+\begin{lstlisting}[language=JavaScript, caption={Test execution, source: self-coded}]
 document.addEventListener("DOMContentLoaded", function () {
     init();
     console.log("Loaded");
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
-\end{verbatim}
+\end{lstlisting}
 
 In order to allow a structured testing procedure, the tests were executed in the following order:
 \begin{enumerate}
