@@ -57,6 +57,8 @@
 \usepackage[table]{xcolor}
 \usepackage{marvosym}			% Verwendung von Symbolen, z.B. perfektes Eurozeichen
 
+%\usepackage{scrhack} % behebt Warnungen und Fehlermeldungen
+
 \renewcommand\familydefault{\sfdefault}
 \usepackage{ragged2e}
 
@@ -235,6 +237,8 @@ mincrossrefs = 1
 \KOMAoption{listof}{entryprefix} % Siehe KOMA-Script Doku v3.28 S.153
 \BeforeStartingTOC[lof]{\renewcommand*\autodot{:}} % Für den Doppelpunkt hinter Präfix im Abbildungsverzeichnis
 \BeforeStartingTOC[lot]{\renewcommand*\autodot{:}} % Für den Doppelpunkt hinter Präfix im Tabellenverzeichnis
+%\BeforeStartingTOC[lol]{\renewcommand*\autodot{:}} % Für den Doppelpunkt hinter Präfix im Tabellenverzeichnis
+
 %-----------------------------------
 % PDF Meta Daten setzen
 %-----------------------------------
