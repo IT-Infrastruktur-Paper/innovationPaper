@@ -75,7 +75,9 @@
 	\renewcommand{\contentsname}{Table of Contents}
 	\renewcommand{\listfigurename}{List of Figures}
 	\renewcommand{\listtablename}{List of Tables}
-	\renewcommand{\appendixname}{Appendix} 
+	\renewcommand{\appendixname}{Appendix}
+	\renewcommand{\figurename}{Figure}
+	\renewcommand{\tablename}{Table}
 	\appendixtitleon    % puts \appendixname before each appendix title
 	%\renewcommand{\abbreHeadingName}{List of Abbreviations}
 }
@@ -233,20 +235,6 @@ mincrossrefs = 1
 \KOMAoption{listof}{entryprefix} % Siehe KOMA-Script Doku v3.28 S.153
 \BeforeStartingTOC[lof]{\renewcommand*\autodot{:}} % Für den Doppelpunkt hinter Präfix im Abbildungsverzeichnis
 \BeforeStartingTOC[lot]{\renewcommand*\autodot{:}} % Für den Doppelpunkt hinter Präfix im Tabellenverzeichnis
-
-%-----------------------------------
-% Abkürzungsverzeichnis
-%-----------------------------------
-\usepackage[printonlyused]{acronym}
-
-%-----------------------------------
-% Glossar
-%-----------------------------------
-\usepackage{glossaries}
-%\glstoctrue %Auskommentieren, damit das Glossar nicht im Inhaltsverzeichnis angezeigt wird.
-\makenoidxglossaries
-\input{abbreviations/glossar}
-
 %-----------------------------------
 % PDF Meta Daten setzen
 %-----------------------------------
@@ -345,39 +333,21 @@ mincrossrefs = 1
 % Abbildungsverzeichnis
 %-----------------------------------
 \listoffigures
-\newpage
 %-----------------------------------
 % Tabellenverzeichnis
 %-----------------------------------
 \listoftables
 \newpage
 %-----------------------------------
-% Abkürzungsverzeichnis
-%-----------------------------------
-% Falls das Abkürzungsverzeichnis nicht im Inhaltsverzeichnis angezeigt werden soll
-% dann folgende Zeile auskommentieren.
-\addcontentsline{toc}{section}{List of Abbreviations}
-\input{abbreviations/acronyms}
-\newpage
-
-%-----------------------------------
-% Glossar
-%-----------------------------------
-\printnoidxglossaries
-\newpage
-
-%-----------------------------------
 % Seitennummerierung auf arabisch und ab 1 beginnend umstellen
 %-----------------------------------
 \pagenumbering{arabic}
 \setcounter{page}{1}
-
 %-----------------------------------
 % chapter / Inhalte
 %-----------------------------------
 % Die chapter werden über folgende Datei eingebunden
 \input{skripte/chapterOverview.tex}
-
 %-----------------------------------
 % Apendix / Anhang
 %-----------------------------------

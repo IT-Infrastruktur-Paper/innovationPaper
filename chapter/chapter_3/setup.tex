@@ -4,9 +4,9 @@ In this chapter the experimental setup of this paper and the the corresponding c
 In order to do all tests in one place, a locally hosted website was created. The setup of this website is rather simple yet effective. It consists of a headline and six buttons.
 \begin{figure}[H]
     \centering
-    \caption[]{This is our website}
-	\label{fig:website}
     \includegraphics[width=1\textwidth]{website}
+    \caption{Benchmark Website, Source: Own depiction}
+	\label{fig:website}
 \end{figure}
 
 Each button executes one of the tests, three buttons are for the JavaScript tests and the other three for the WASM tests. Before each test is executed, an input window appears and asks the user to enter a number. What the number represents depends on the test that is executed.
@@ -26,7 +26,6 @@ The code of the main page of the website looks as follows:
     </body>
 </html>
 \end{verbatim}
-input caption here
 
 This basic HTML Code defines the main structure of the website. In terms of styling, there is none. The main task of this code is to link the main.JavaScript file.  
 
@@ -64,7 +63,6 @@ function JavaScript_sieve(limit) {
     return primes;
 }
 \end{verbatim}
-caption einfügen
 
 The following code was used to execute the algorithm with WASM, coded in Rust:
 \begin{verbatim}
@@ -97,7 +95,6 @@ pub fn wasm_sieve(limit: usize) -> Vec<usize> {
     primes
 }
 \end{verbatim}
-caption einfügen 
 
 Both code snippets in essence implement the same algorithm, just in different languages. However, it was coded in such a way that the implementations are comparable. To give an example, the code written in Rust could be further optimized by iterating over the sieve vector with `sieve.iter()`. Since this is not an option in JavaScript it was implemented similarly to JavaScript to enhance comparability. Another difference between both implementations is the usage of vectors in Rust. Because the neither the input nor the number of primes is not known beforehand, a growable object is required. In JavaScript an array is such a growable object but in Rust an array is not growable, therefore it is replaced by a vector. 
 
@@ -118,7 +115,6 @@ function JavaScript_ram_test(size) {
     }
 }
 \end{verbatim}
-caption einfügen
 
 The following code was used to execute the algorithm with WASM, coded in Rust:
 \begin{verbatim}
@@ -135,7 +131,6 @@ pub fn wasm_ram_test(size: usize) {
     }
 }
 \end{verbatim}
-caption einfügen
 
 As with the first test, the two code snippets, in essence, execute the same operations. The difference in both implementations are identical to the previous test and are also justified the same way. 
 
@@ -162,7 +157,6 @@ function JavaScript_create_elements(count) {
     }
 }
 \end{verbatim}
-caption einfügen
 
 The following code was used to execute the algorithm with WASM, coded in Rust:
 \begin{verbatim}
@@ -183,7 +177,6 @@ pub fn wasm_create_elements(count: usize) {
     }
 }
 \end{verbatim}
-caption einfügen
 
 In this case the two code snippet again implement the same procedure. Unlike in the previous tests, there are no performance-relevant differences between JavaScript and WASM. The difference in the code emerge from the syntax of the two languages. However, one difference needs to be highlighted. Rust encourages explicit error handling. Since this code will not be deployed to regular users, explicit error handling is not necessary and is avoided by using the `.unwrap()` function.
 
