@@ -1,0 +1,1277 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+ 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+JavaScript
+	keywords=break, super, case, extends, switch, catch, finally, for, const, function, try, continue, if, typeof, debugger, var, default, in, void, delete, instanceof, while, do, new, with, else, return, yield, enum, let, await,
+	keywordstyle=,
+	ndkeywords=class, export, boolean, throw, implements, import, this, interface, package, private, protected, public, static,
+	ndkeywordstyle=,
+	identifierstyle=,
+	sensitive=false,
+	comment=[l]//,
+	morecomment=[s]/**/,
+	commentstyle=,
+	stringstyle=,
+	morestring=[b]',
+	morestring=[b]"
+
+
+
+	
+	numbers=left,
+	numberstyle=,
+	numbersep=5pt,
+	breaklines=true,
+	showstringspaces=false,
+	frame=l ,
+	xleftmargin=5pt,
+	xrightmargin=5pt,
+	basicstyle=,
+	stepnumber=1,
+	keywordstyle=,          
+  	commentstyle=,       
+  	stringstyle=         
+
+
+
+
+
+
+
+
+same
+
+
+
+
+
+
+
+
+ 
+
+
+
+book
+    issn
+    doi
+    isbn
+    url
+    eprint
+
+collection
+  issn
+  doi
+  isbn
+  url
+  eprint
+
+incollection
+  issn
+  doi
+  isbn
+  url
+  eprint
+
+article
+  issn
+  doi
+  isbn
+  url
+  eprint
+
+inproceedings
+  issn
+  doi
+  isbn
+  url
+  eprint
+
+
+
+
+
+[bib,biblist]nametitledelim
+titleyeardelim
+
+
+
+
+
+
+
+
+finalnamedelimmultinamedelim
+
+defaultfamily-given
+sortnamedefault  
+
+
+editortype#1
+editortypedelim
+translatortype#1
+translatortypedelim
+[bib,biblist]innametitledelim
+
+*citetitle#1
+*title#1
+*booktitle#1
+*journaltitle#1
+
+online
+  organization+location+date
+  
+  
+
+[online]date#1
+urltime#1UhrMEZ
+urldate
+  [ZugriffAccess  #1urltime]
+
+[online]url<#1>
+*url+urldate
+  url
+  online
+    *
+     year
+       [date]keine Datumsangabeno Date 
+       date
+    
+  *
+  urldate
+  
+
+
+
+
+  
+    labelyear
+    year
+    
+    
+      usera
+     
+
+
+
+
+
+
+
+
+*date+extradate
+  [parens]
+    usera
+    titleyeardelim
+    online
+       *
+         year
+           nodate
+       
+       
+
+
+
+
+*cite:labeldate+extradate
+    online
+       *
+         year
+           nodate
+       
+       
+
+
+german
+  nodate    = o.J,
+  andothers = etal
+
+english
+  nodate    = n.d,
+  andothers = etal
+
+
+  [datatype=bibtex]
+    
+      [notfield=translator, final]
+      [notfield=editor, final]
+      [fieldset=author, fieldvalue=oVAnon]
+    
+    
+      online
+      [fieldset=location, fieldvalue=oOsI]
+    
+  
+
+
+*cite
+  shorthand
+    labelnamelabelyear
+       cite:label
+        nonametitledelim
+       labelname
+        nametitledelim
+     usera
+     titleyeardelim
+     cite:labeldate+extradate
+    cite:shorthand
+
+    
+    
+    
+
+*journal+issuetitle
+  journal
+  *
+  series
+    
+    *
+     series
+     
+  volume
+    
+    volume
+  labelyear
+  
+  
+  (year) 
+  
+  *Nr
+  number
+  eid
+  
+  eid
+
+
+
+
+
+
+*postnote
+  
+  postnote
+     
+    postnote
+
+
+
+
+
+
+nonameyeardelim
+nameyeardelim
+
+*cite
+  shorthand
+    
+       cite:ibid
+    [bibhyperref]labelnamelabelyear
+       cite:label
+        nonameyeardelim
+      abx@bool@giveninits
+        [family-given]labelname
+        nameyeardelim
+      usera
+      titleyeardelim
+     cite:labeldate+extradate
+   cite:shorthand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+literatur/literatur.bib
+
+
+
+
+
+
+
+
+ngerman-x-latest
+ngermanngerman-x-latest
+
+
+
+
+././abbildungen/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+listofentryprefix 
+[lof]
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+glossarname=Glossar,description=In einem Glossar werden Fachbegriffe und Fremdwörter mit ihren Erklärungen gesammelt.
+glossariesname=Glossaries,description=Glossaries ist ein Paket was einen im Rahmen von LaTeX bei der Erstellung eines Glossar unterstützt.
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+literate=
+	áa1 ée1 íi1 óo1 úu1
+	ÁA1 ÉE1 ÍI1 ÓO1 ÚU1
+	àa1 èe1 ìi1 òo1 ùu1
+	ÀA1 ÈE1 ÌI1 ÒO1 ÙU1
+	äa1 ëe1 ïi1 öo1 üu1
+	ÄA1 ËE1 ÏI1 ÖO1 ÜU1
+	âa1 êe1 îi1 ôo1 ûu1
+	ÂA1 ÊE1 ÎI1 ÔO1 ÛU1
+	œoe1 ŒOE1 æae1 ÆAE1 ßss1
+	űu1 ŰU1 őo1 ŐO1
+	çc1 ÇC1 øo1 åa1 ÅA1
+	€1 £1 „1
+
+
+
+
+
+
+
+
+
+
+[C]
+
+
+
+
+
+
+
+
+same
+
+
+
+
+Roman	
+C>X	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	left=2cm, right=2cm, top=2cm, bottom=2cm
+	
+     
+
+    
+	
+
+    
+	Hochschulzentrumuniversity location Large
+
+	
+    
+
+    
+	
+	
+	
+    im Studiengangin the study course 	
+
+	
+    
+	
+	
+	im Rahmen der Lehrveranstaltung
+
+	
+
+	
+	über das Thema
+	on the subject
+
+    
+	
+
+	
+    vonby
+
+    
+    
+
+			    
+
+
+
+
+
+
+
+
+
+
+
+
+toc-20mm
+
+
+
+
+
+
+
+
+
+
+
+
+
+AbkürzungsverzeichnisList of Abbreviations
+
+[WYSIWYG]0pt 
+  OCFOM Online Campus
+  WYSIWYGWhat you see is what you get
+  BeispielNicht verwendet, taucht nicht im Abkürzungsverzeichnis auf
+
+
+
+
+
+
+
+
+tocsection
+
+
+
+
+
+
+
+
+
+
+
+[Aufrechter Buchstabe]ABA
+[Menge aller natuerlichen Zahlen ohne die Null]symnzN
+[Menge aller natuerlichen Zahlen einschliesslich Null]symnzmnN_0
+[Menge aller ganzen Zahlen]GZZ
+[Menge aller rationalen Zahlen]RatZQ
+[Menge aller reellen Zahlen]RZR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arabic
+
+
+
+
+
+
+
+Introduction The evolution of web technology has continuously pushed the boundaries of what can be achieved within web applications, particularly in terms of performance and computational capabilities. One of the latest advancements in this arena is Web Assembly (WASM), a binary instruction format designed to enable high-performance code execution on web browsers. As the demand for sophisticated web applications increases, it is imperative to understand the comparative advantages of WebAssembly (WASM) over traditional JavaScript (JS), particularly in scenarios involving computationally intensive operations (!Quelle vgl. SitePoint  WebAssembly Concepts).
+
+JavaScript has been the predominant language for web development for the last decades. However, the interpreted nature and runtime environment of JavaScript introduce performance bottlenecks, especially when dealing with complex computations. Therefore, it is important to consider the benefits of using WebAssembly for implementing client-side logic. WebAssembly offers a promising alternative by providing a low-level bytecode format that can be efficiently compiled and executed across different platforms (!Quelle vgl. SitePoint  WebAssembly Concepts).
+
+The aim of this thesis is to investigate the performance differences between Web Assembly and JavaScript in client-side applications, with a specific focus on computationally intensive operations. Through rigorous experimentation and analysis, we aim to determine whether Web Assembly provides a distinct advantage over JavaScript in terms of efficiency.
+
+To achieve this aim, the research will investigate various aspects of performance comparison, such as CPU utilization, memory usage, and DOM manipulation. We will conduct benchmark tests and empirical evaluations to provide concrete insights into the relative strengths and weaknesses of both approaches.
+
+Furthermore, this research will not only clarify the technical aspects of Web Assembly and JavaScript but also investigate their practical implications for developers aiming to enhance performance in real-world situations. By explaining the trade-offs, limitations, and best practices of each technology, we aim to provide useful guidance for making informed decisions when choosing the most appropriate technology for client-side applications that require computationally intensive operations.
+
+Personal Motivation The motivation of this study is to analyse, clarify and evaluate the performance of WebAssembly in comparison to JavaScript. The resulting findings are particularly interesting because this web standard is relatively new compared to JavaScript.
+For this reason, we believe that it is important to continue researching this standard in depth in order to enable meaningful use and in-depth future development. In addition, we would like to gain a deeper understanding of the performance characteristics of WebAssembly in comparison to JavaScript. This requires both research into existing analyses and an independent analysis of the two web standards.
+Overall, we would like to make a contribution to the performance discussion between WebAssembly and JavaScript with this work as part of a comprehensive analysis.
+Research Aim This paper aims to investigate the performance disparity between Web Assembly (WASM) and JavaScript (JS) in the context of client-side applications, with a focus on computationally intensive algorithms. The objective is to determine whether WASM provides a distinct advantage over JS in terms of efficiency through comprehensive experimentation and analysis.
+Research Objectives In order to completely cover the most important topics and to have a clear outline for the research process, we defined the following research objectives:
+
+
+    Evaluate the performance of Web Assembly and JavaScript implementations in executing computationally intensive algorithms within client-side applications.
+    Measure and compare CPU utilization between WASM and JS implementations across various benchmark tests.
+    Assess memory usage and management efficiency between WASM and JS for tasks involving computationally intensive operations.
+    Analyze the impact of DOM manipulation on the overall performance of WASM and JS implementations within the context of client-side applications.
+    Provide empirical evidence and insights to ascertain whether Web Assembly is advantageous over JavaScript from an efficiency perspective in the targeted application domain.
+    Offer recommendations and guidelines for developers based on the findings to optimize performance when selecting between Web Assembly and JavaScript for client-side applications with computationally intensive algorithms.
+
+Literature Siehe auch Wissenschaftliches Arbeiten [][S. 1]Balzert.2008. 
+Damit sollten alle wichtigen Informationen abgedeckt sein ;-) [][1]Balzert.2008 
+Hier gibt es noch ein Beispiel für ein direktes Zitat[][1]Balzert.2008 
+
+WASM WebAssembly is a standardized bytecode that has been supported by modern browsers since 2017 (see WebAssembly - More than just a web standard, n.d., p. 1). It is intended as a supplement to JavaScript in the browser, as the latter cannot deliver the necessary performance when performance requirements are high (cf. zeroshope, 2020, p. 1).
+WebAssembly was declared an official web standard by the World Wide Web Consortium. Apple, Google, Microsoft Mozilla and game engine manufacturers have also participated in the development of the new web standard (see "WebAssembly is standard", 2019, p. 49).
+In addition, WebAssembly is executed in a so-called virtual machine and there are programming languages such as Rust, C/C++ or Go, which can be translated directly into the WebAssembly bytecode. This means that WebAssembly is not written directly in bytecode, but in one of the aforementioned programming languages and then automatically translated into bytecode. (See WebAssembly - More than just a web standard, n.d., p. 1).
+WebAssembly is not a programming language written by humans. WebAssembly is much more a code that is to be written by a machine (see JavaScript vs WebAssembly, n.d., p. 1). This WebAssembly code is the result of compiled, conventional code, for example from a programming language such as Rust or Go. This compiled code is then available in a tightly packaged binary file and can be executed directly by the computer's processor. This directly executable type of code is called low-level code (see What is WebAssembly (Wasm)?, n.d., p. 1).
+In order to be able to use web assembly in a browser that supports the technology, the compiled binary file must be executed in this browser using JavaScript. Execution creates a virtual instance within JavaScript, in which the WebAssembly file is then executed (see What is WebAssembly (Wasm)?, n.d., p. 1).
+
+Rust Rust has emerged to become a very popular programming language in recent years, gathering attention for its innovative approach to addressing common pitfalls in software development, particularly those related to memory safety and concurrency. For the matter of this paper, it is important to take a deeper look into Rust, where it came from, what its main benefits are as well as Rusts problems. 
+Rust has quite a unique history, as it was initially developed in 2006 by a young, 29 year old developer named Graydon Hoare in his spare time. It was not until 2010 that the company he worked for, Mozilla Research, presented a project to create a new programming language. This new project was aimed at creating a safe and concurrent alternative to existing systems programming languages. Over the years, Rust has undergone significant development, resulting in its stable release in 2015. (!Quelle vgl. MIT) Hoare took inspiration from existing programming languages such as C++, Haskell, and Erlang. Rust aimed to combine the performance of low-level programming languages with the safety, readability and "ease-of-use" of high-level programming languages. Early versions of Rust focused on refining its type system, borrowing rules, and ownership model, laying the groundwork for its distinctive approach to memory management and concurrency.
+
+Now that the history on Rust is clear, it is more than useful to get a short summary on the functionalities of Rust. Therefore, ChatGPT has been asked to write a short summary of Rusts key features with the following output:
+Rust is distinguished by several key features that set it apart from traditional programming languages. Central to Rust's design is its ownership model, which ensures memory safety and prevents common issues such as data races and null pointer dereferences. In Rust, every value has a unique owner, and ownership can be transferred or borrowed through explicit rules enforced by the compiler. This approach eliminates the need for garbage collection while guaranteeing memory safety at compile time. Furthermore, Rust's expressive type system enables developers to write code that is both efficient and easy to reason about. The language supports static typing, generics, traits, and pattern matching, facilitating the creation of robust and scalable software solutions. Additionally, Rust's zero-cost abstractions enable developers to write high-level code without incurring runtime overhead, making it well-suited for performance-critical applications.
+
+With the positive sides of Rust in mind the following section will focus on the drawbacks and limitations of Rust. One of the main hurdles for programmers is the steep learning curve associated with Rust's complex concepts like ownership, lifetimes, and borrowing. Although these features add to the language's safety and efficiency, they can pose difficulties for developers (!Quelle vgl. tutorialspoint, medium)
+Another concern related to Rust the compilation time of its projects, which can be significantly longer compared to other languages. This is because Rust does not compile one file at a time but a whole package of files called "Crates", which can take a while to compile (!Quelle vgl. tutorialspoint, medium). While optimizations and tooling improvements have mitigated this issue to some extent, it remains a point of discussions for developers working on time-sensitive projects.
+Rust's limited codebase and lack of an elaborate library is another drawback. While efforts have been made to improve compatibility through tools such as the Rust FFI (Foreign Function Interface), seamless integration with legacy code remains an area of active research and development (!Quelle vgl. tutorialspoint, medium).
+
+Overall Rust has become known to be one of the most beloved modern programming language in the past years. It becomes clear that Rust has potential to become even more popular and widely used looking at statements such as 
+"It’s enjoyable to write Rust, which is maybe kind of weird to say, but it’s just the language is fantastic. It’s fun. You feel like a magician, and that never happens in other languages." (!Quelle MIT) or the fact that many large companies like Amazon, Dropbox or Microsoft already implemented it in their development process.
+JavaScript The programming JavaScript is without a doubt the most commonly used programming language on the planet, in fact, about 63% of developers are using JavaScript according to a 2023 study from Stackoverflow (!Quelle Stackoverflow Survey 2023). This marks JavaScipts 11th year in a row as the most popular programming language. Because of its popularity and importance for this research it is necessary to look further into the history of JavaScript and why it so important for web development.
+
+The programming language JavaScript was initially invented in the year 1995 by Brendan Eich(w3). Two years later it was presented to the ECMA (European Computer Manufacturers Association) to become the ECMA-262 standard in the year 1997 (w3). After the first version (E1), which was solely supported by IE4 (Internet Explorer).
+After a lot of iterations, discussions and new major releases, the most important version in the history of JavaScript is version number 5 (E5), which was the first version to be supported by all major browser at the time.
+
+It is also important to declare the strict difference between the two programming languages JavaScript and Java since they have name similarities. Although they where developed in the same year (1995) they are different in its core. The main difference is that JavaScript is a lightweight, dynamically interpreted scripting-language. Java on the other hand is an object-oriented programming language which is made to be more robust and platform independent, leading with the promise "Write Once, Run Anywhere".
+
+In order grasp the complexity and importance of JavaScript, it is necessary to get a basic understanding of it. Therefore ChatGPT has been asked to summarize the available resources on JavaScript with the following result:
+
+"JavaScript is a high-level, dynamic, interpreted programming language primarily utilized for client-side web development. It employs a prototype-based object-oriented paradigm, featuring first-class functions and asynchronous programming capabilities. JavaScript is commonly embedded within HTML documents and executed by web browsers to manipulate the Document Object Model (DOM) dynamically, enabling interactive user interfaces and dynamic content generation. Its versatility extends beyond web development, as it can also be employed for server-side scripting, mobile application development, and desktop application development through frameworks like Node.js. JavaScript's syntax is influenced by C and Java, offering a rich ecosystem of libraries, frameworks, and tools for application development. It serves as a fundamental technology underpinning modern web applications, facilitating the creation of dynamic and interactive experiences across various platforms." (!Quelle/Prompt einfügen!)
+
+The main takeaway from ChatGPT's summary is that the programming language JavaScript is of utmost importance for the development and usage of modern websites. Because without JavaScript, many parts of a website would not be dynamic as we have gotten used to it by now but rather static in its code and interaction (!Quelle as cited in freecodecamp). After all, without JavaScript "all you would have on the web would be HTML and CSS" (!Quelle freecodecamp) and commonly known website design-clues like a full-page drop down menu or content that is dynamically loaded into the websites body would be missing without the existence of JavaScript.
+
+After those insights it is further necessary to take a look at common problems and setbacks of JavaScript. One main area of mistakes in JavaScript code is the syntax and data type handling, especially the lack of strong typing and type coercion. According to ChatGPT, the lack of strong typing in JavaScript "can make it prone to runtime errors and debugging difficulties, particularly in larger codebases where type safety is crucial" (!Quelle ChatGPT Prompt Error). The other major source for errors in JavaScript is type coercion, which is a process where a value is converted from one data type to another. The process in itself is not the problem, it is rather that JavaScripts loose typing and its therewith connected automatic type conversion can lead to errors, especially when using the equal operator.
+Another major source of errors is nesting multiple callbacks into a pyramid-like structure, which has become known as Callback Hell (!Quelle vgl. ChatGPT Prompt Error  GeeksforGeeks). Callback Hell usually does not lead to technical errors but rather logical errors since the structure can become difficult to read and to understand. 
+The last major error source is JavaScripts bottleneck in performance, caused through "Inefficient algorithms, excessive DOM manipulation, or poorly optimized code" (!Quelle ChatGPT Prompt Error). Especially the excessiveness in which JavaScript allows you to manipulate the DOM seems to be a problem, since it does not provide any guidance on how to do DOM manipulation efficiently (!Quelle vgl. ChatGPT Prompt Error  Toptal  Browserstack). Combined with the common problem of memory leaks caused by "retaining references to objects that are no longer needed" (!Quelle vgl. ChatGPT Prompt Error).
+
+Even though it seems like there are a lot of problems and error sources with JavaScript, one needs to keep in mind that JavaScript is in fact the most used programming language in the world, hence a lot of developers have used JavaScript to its bones and found every single problem there is. Overall it is still a very practical, lightweight and easy to learn language which continuously delivers good results.
+DOM Since this paper is going to do tests on the interaction of JavaScript and WASM with the DOM (Document Object Model), it is necessary to get a better understanding of the DOM, where it came from and what the benefits and drawbacks are.
+
+The DOM originates from the need to dynamically interact with objects on a website through JavaScript. The standardization and documentation of the DOM was done by World Wide Web Consortium (W3C) as a platform-independent API, accompanied by a lot of stakeholders such as the Document Object Model Working Group and vendors of e.g. HTML or XML editors (!Quelle vgl. w3org). This first officially standardized version by the W3C is called DOM Level 1 and was released in 1998. From that point onward, DOM Level 2 was released in the year 2000 and DOM Level 3 was released in 2004, each with their own subsequent set of enhanced features and capabilities. The last iteration of the DOM, DOM Level 4, was released in the year 2015 (!Quelle vgl. freecodecamp).
+
+Due to its importance as the backbone structure of every modern website that needs dynamic interaction it is important to have a good general understanding of the DOM and its functionality. Therefore ChatGPT has been asked to summarize the available resources on the DOM with the following result:
+The Document Object Model (DOM) refers to a standardized, platform-independent application programming interface (API) utilized for representing and interacting with structured documents. Primarily employed in web development, the  DOM provides a hierarchical representation of documents, enabling programmatic access and manipulation of their content, structure, and style. Characterized by its tree-like structure, the DOM organizes elements of an  document into a logical arrangement, wherein each element is represented as a node possessing distinct properties and relationships with other nodes. This model facilitates dynamic manipulation of web content through scripting languages such as JavaScript, allowing for the modification of document elements, attributes, and event handling, thereby facilitating dynamic and responsive web experiences. As a fundamental component of web technologies, the  DOM serves as an intermediary layer between web documents and scripting environments, facilitating seamless integration and manipulation of web content for diverse interactive applications. (!Quelle/Prompt einfügen!)
+
+Of further importance for this paper are the potential bottlenecks developers face when working with the DOM. Performance bottlenecks, stemming from inefficient DOM manipulation and navigation, can diminish the responsiveness and user experience of web applications. Moreover, cross-browser inconsistencies and compatibility are major challenges for developers looking to create consistent experiences across different platforms and devices. Security vulnerabilities, such as cross-site scripting (XSS) attacks and DOM-based injection, underline the importance of implementing robust security measures to safeguard against malicious exploitation. Due to its steep learning curve and the general complexity of DOM manipulation, it is very difficult to learn for developers. (!Quelle vgl. smashingmagazine, keycdn, w3schools)
+
+In conclusion, the HTML Document Object Model (DOM) represents a cornerstone of modern web development, enabling dynamic interactions between web content and scripting environments. Despite its transformative impact and widespread adoption, the DOM is not immune to limitations, which makes it a perfect candidate for the performance tests of this paper.
+Assembler Assemblers are programs that convert assembler code into machine language, i.e. binary code. They work directly with the respective processor architecture of the system in question and are considered efficient and resource-saving. Assemblers translate code directly into binary code, which can be created manually or by machine. Some compilers first convert program code from higher programming languages into assembler code and then use an assembler to generate the final machine code.
+Assembler programs can use the entire instruction set of a processor, as each assembler instruction has a corresponding machine-level instruction. In contrast, higher programming languages are limited to a selection of these instructions and therefore sometimes offer the option of integrating assembly code into the source code if required.
+Each processor has its own architecture and its own instruction set, which means that each processor also requires its own assembler in order to process the instructions accordingly. Code for a specific processor can only be understood and translated in the specific assembly language. The assembly language uses mnemonic abbreviations for the internal instructions of the processor to enable logical and arithmetic operations, register accesses and control of the program flow. Assembly language programs are therefore highly platform-dependent and programs may have to be completely redeveloped in order to be transferred to another architecture or platform. One example of this is games that are developed for both desktop PCs with Intel processors and Playstation 5 with AMD processors.
+Due to its proximity to the processor architecture, assembly code offers the advantage of being able to be quickly converted into binary code, i.e. machine code. 
+Nowadays, pure assembly language programming is rarely used, as both system memory in various forms and basic computing power are available at low cost and the effort is mainly made to optimize time-critical systems or for educational purposes. Assembly language often seems limited and cumbersome compared to high-level languages, as complex operations are not part of the instruction set and longer programs are required. They are also difficult to manage, as the minimalist code is difficult to understand and requires very precise documentation in the source code.
+
+(https://www.dev-insider.de/was-ist-ein-assembler-a-756636/)
+Interpreter An interpreter, in the context of programming, is a software that reads source code line by line and executes the source code directly at this point in time, the so-called runtime. The interpreter therefore analyzes the source code during execution and also only detects potential errors during execution. An example of a programming language that uses an interpreter is Java.
+The functionality of an interpreter therefore enables a program to execute the source code directly without having to translate it completely first. Although a translation takes place, this is not separate from the execution, unlike the compiler. For each line in the source code, an immediate action takes place in the form of the execution of the underlying code. The sequence of these actions is determined by the instructions in the source code.
+The advantage of an interpreter is that errors that occur during programming can be detected immediately during execution. If there is an error in the source code, the interpreter stops further execution of the program and the programmer recognizes that there must be an error in the source code at precisely this point.
+At the same time, the interpreter also has disadvantages. Compared to a compiler, the interpreter works relatively slowly. This is because the interpreter reads each line individually. Even if lines of code are repeated, they are analyzed by the interpreter and only then successfully executed (Vgl. Was ist ein Interpreter?, 2019, S. 1).
+
+Compiler A compiler, in the context of programming, is software that translates the source code completely into a form that can be processed by a machine. The compiler therefore analyzes the complete source code before execution and also detects potential errors in the source code before the first execution. An example of a programming language that uses a compiler is C.
+The procedure of the compiler differs not only in the separation of the analysis and execution of the code from the interpreter, but also in the general procedure.
+The compiler translates the source code by checking the syntax and then checking the semantics. If the source code passes this process without errors, it is translated into machine code, which can then be executed by the computer.
+The advantage of a compiler is that it only has to translate the source code once and can therefore be more performant than an interpreter (Vgl. Was ist ein Compiler?, 2019, S. 1).
+
+
+Methodology To investigate the research question, we decided to go for an explanatory research. An explanatory research is common for diving deeper into phenomena by describing and explaining the reasons for them, to give an answer why something is the way it is.  It aims to understand the essence of what is being observed, focusing on explaining processes or structures and advancing knowledge about it. This type of research connects various factors and elements to formulate general statements and involves building, testing, or revising theories. (Vgl. Adams et al., 2014, S. 2)
+In our specific case, we want to improve our knowledge about something we do already have some information about. The objective we are aiming for is a mixture of providing information, to solve problems in the future and to test new services. (Vgl. Adams et al., 2014, S. 3)
+So in this chapter, we will describe how we have done our literature review at first. In the next step, we will describe the laboratory experiment and after that, the experimantel design. The next subchapter is about the setup, followed by the procedure and the research project.
+The last subchapter is about our GitHub, which we have used during our experiment. 
+Literature Review In this chapter, we will describe what literature we have selected, how we have it selected and why we have selected our literature. 
+The significance of the literature review lies not only in its ability to contextualize our study within existing scholarship but also in its multifaceted connections to our research questions, chosen methodologies and eventual findings. We followed the upcoming aspects to investigate our research question.
+At first we answered the question, whether our work has already been done or not. This is necessary in order to be able to make a statement about how and whether the selected topic is scientifically relevant (Vgl. Adams et al., 2014, S. 34). There are already a lot of articles about what WebAssemby is, what it may can do or especially a performance comparison between WebAssembly and JavaScript. In the world of software and hardware testing, it has become clear that the smallest differences can change or influence the result. The more tests are carried out, the more results can be compared. Also the more tests you make and the more results you have, the more can be ensured, that the results are valid or not.
+In the next step, we pointed out, what the main theoretical perspective is (Vgl. Adams et al., 2014, S. 34). There are some cases in which WebAssembly is faster than JavaScript and there are also cases, in which JavaScript is faster than WebAssembly. It depends on which explicit test you want to compare JavaScript and WebAssembly (Vgl. De Macedo et al., 2022, S. 10). WebAssembly in general promisis a high and optimised performance (Vgl. WebAssembly – Mehr als nur ein Web-Standard, o. J., S. 1). On the other hand, JavaScript is the most common web development language with all its common issues (Vgl. Common JavaScript Issues and Its Solutions, o. J., S. 1). WebAssembly is build in a binary format, which makes it theoretically faster than Javascript. You can compare these two  on different aspects like Runtime, Memory or cpu usage (Vgl. Sunarto et al., 2023, S. 1). For example, the runtime of WASM is shorter than that of JavaScript in all WasmBoy benchmark tests. There are differences between the various browsers in which the WasmBoy benchmark test was run, with the differences being most noticeable in Mozilla's browser, Firefox. (Vgl. De Macedo et al., 2022, S. 6) There are also tests in which JavaScript performs better than WebAssembly. In microbenchmark tests in the form of various sorting algorithms, JavaScript sometimes achieves shorter throughput times than WebAssembly. Here too, the results differ depending on the browser used. (Vgl. De Macedo et al., 2022, S. 5) The memory usage of WebAssembly also differs from JavaScript. WebAssembly uses considerably more memory than JavaScript, both in Firefox and in Chrome. The difference between the memory usage of WebAssembly and JavaScript is increasing as the input given to the two web standards increases. While the memory usage of JavaScript remains the same despite increasing input, the memory usage of WebAssembly increases continuously. (Vgl. Sunarto et al., 2023, S. 4f.)
+After that, we want to show up the problems we got while researching the literature (Vgl. Adams et al., 2014, S. 37). While gaining general information about the main theoretical perspectives, the problem was, that there was not that single literature which could answer our research question. It was also not easy to find out, how to make our specific tests between these two architectures. There are many different literatures which compared WebAssembly and JavaScript on many different technical aspects but not pointed out, which method may be the best. The topic is also relatively new, which made it difficult to find suitable literature. Both quantitatively and qualitatively.
+In the following we will describe the major controversies on our topic (Vgl. Adams et al., 2014, S. 37f). WebAssembly is not used in common yet. JavaScript is still the most common web development language. One reason for that can be the disadvantage, that a garbage collector is still missed in WebAssembly, which means that storage management can not be done by itself. WebAssembly can also not interact with the DOM of a Website without JavaScript and therefore not change the visualization of a website itself. (Vgl. Was ist WebAssembly (Wasm)?, o. J., S. 1)
+
+Laboratory Experiment Platzhalter Text
+Experimental Design A scientific experiment is carried out in order to obtain empirical data and to test the hypotheses put forward. To distinguish it from an observation, independent variables are manipulated in an experiment under controlled conditions. The independent variable in turn influences a dependent variable. In the next step, the independent variable is deliberately manipulated and the dependent variable reacts to this event. (Vgl. Genau, 2018, S. 1)
+For our research, a laboratory experiment comes into question, as we create an artificial environment in which we can control all variables well. Due to the artificial environment we have created, assumptions can be made, but the results cannot be generalized with complete certainty. (Vgl. Genau, 2018, S. 1)
+In this chapter we describe our experimental design for our explanatory research. 
+For our experimental design, we orientated on four key steps that help us to perform a theoretical based and structured experiment. The four key steps are: 
+1.	Defining our variables
+2.	Writing our hypothesis
+3.	Designing our experimental treatments
+4.	Measure our dependent variable
+(Vgl. Bevans, 2019, S. 1)
+
+1.Defining our Variables
+
+(Abbildung Comparison Design)
+
+In that case our question is, if and how the runtime can be affected by whether using JavaScript or using WebAssembly for different computationally intensive operations. The key independant variables are „JavaScript“ and „WebAssembly“. The key dependant variable is „Runtime“. Abb.X is further called „Fixed testing part“.
+To specify different input operations, we will show them in the following figures, while there is the fixed test part as shown above and the "operation part" for the different test operations, which define the input given to each, JavaScript and WebAssembly within the fixed test part.
+
+(Abbildung Comparison 2)
+(Tabelle variables)
+
+The first operation part is about the Sieve of Eratosthenes. The code is written in both, JavaScript and for WASM with Rust. Both programming languages are the independent variables, which are effecting the dependent variable runtime directly.
+The third operation part is about DOM manipulation. Here, the independent variables are JavaScript and WASM. The dependent variable, affected be the independent variables JavaScript and WASM, is runtime.
+
+2.Writing our hypothesis
+Now that we have defined our testing variables, we can put our hypothesis for each operation part in position. (Vgl. Bevans, 2019, S. 1)
+
+(Tabelle hypothesis)
+
+With the execution of the Sieve of Eratosthenes algorithm it is assumed that WebAssembly has a faster Runtime than JavaScript.
+For RAM read and write operations it is assumed that WebAssembly has a faster runtime than JavaScript.
+For the third hypothesis it is assumed that JavaScript has a faster Runtime than WebAssembly for DOM manipulation.
+
+3.	Design our experimental treatments
+In order to carry out a realistic test experiment, it is necessary to make various changes to the variables. This allows a wide variety of conditions to be tested and the resulting findings to be recorded. Different variables ensure that the experiment is as valid as possible (Vgl. Bevans, 2019, S. 1).
+In our case we simply change the operation part to manipulate our independant variables. By changing this, JavaScript and WASM can be compared on different ways in different use cases, so that we can collect as many results as possible and useful for our comparison and research goal.
+
+4.	Measure our dependent variable
+In the end, we will collect all the data from the testing cases (operation part) and measure them, to answer our hypothesis.
+
+Setup In this chapter the experimental setup of this paper and the the corresponding code will be described. Referring to the chapter before, there are three different test that need to be conducted. 
+
+Setup Website In order to do all tests in one place, a locally hosted website was created. The setup of this website is rather simple yet effective. It consists of a headline and six buttons.
+
+        []This is our website
+	    
+Each button executes one of the tests, three buttons are for the JavaScript tests and the other three for the WebAssembly tests. Before each test is executed, an input window appears and asks the user to enter a number. What the number represents depends on the test that is executed.
+
+The code of the main page of the website looks as follows:
+
+input caption here
+
+This basic HTML Code defines the main structure of the website. In terms of styling, there is none. The main task of this code is to link the main.js file.  
+
+Setup First Test - CPU Benchmark Next is the setup of the first test, which is a CPU Benchmark test based on the Sieve of Eratosthenes algorithm. In the field of computer science this algorithm is commonly used to measure computer performance. "The time complexity of calculating all primes below n in the random access machine model is  operations, a direct consequence of the fact that the prime harmonic series asymptotically approaches . It has an exponential time complexity with regard to input size, though, which makes it a pseudo-polynomial algorithm. The basic algorithm requires  of memory." (!Quelle wikipedia Sieve of Eratosthenes).
+The input parameter for this test determines the limit up to where the algorithm searches for prime numbers.
+
+The following code was used to execute the algorithm with JavaScript:
+
+caption einfügen
+
+The following code was used to execute the algorithm with WASM, coded in Rust:
+
+caption einfügen 
+
+Both code snippets in essence implement the same algorithm, just in different languages. However, it was coded in such a way that the implementations are comparable. To give an example, the code written in Rust could be further optimized by iterating over the sieve vector with 'sieve.iter()'. Since this is not an option in JavaScript it was implemented similarly to JavaScript to enhance comparability. Another difference between both implementations is the usage of vectors in Rust. Because the neither the input nor the number of primes is not known beforehand, a growable object is required. In JavaScript an array is such a growable object but in Rust an array is not growable, therefore it is replaced by a vector. 
+
+Setup Second Test - RAM Speed The second test uses a multitude of read and write operations as a stresstest for the RAM speed. The input parameter for this test determines the size of the iterable to perform the read and write operations on.
+
+The following code was used to execute the algorithm with JavaScript:
+
+caption einfügen
+
+The following code was used to execute the algorithm with WASM, coded in Rust:
+
+caption einfügen
+
+As with the first test, the two code snippets, in essence, execute the same operations. The difference in both implementations are identical to the previous test and are also justified the same way. 
+
+Setup Second Test - DOM manipulation The final test was about DOM manipulation and was implemented because JavaScript "makes it relatively easy to manipulate the DOM (i.e., add, modify, and remove elements), but does nothing to promote doing so efficiently" (!Quelle toptal The 10 Most Common JavaScript Issues Developers Face). Therefore this test investigates the DOM manipulation with JavaScript and WASM to see which operates more efficiently. The input parameter for this test determines the number of div elements that should be created and shown on the screen.
+
+The following code was used to execute the algorithm with JavaScript:
+
+caption einfügen
+
+The following code was used to execute the algorithm with WASM, coded in Rust:
+
+caption einfügen
+
+In this case the two code snippet again implement the same procedure. Unlike in the previous tests, there are no performance-relevant differences between JavaScript and WASM. The difference in the code emerge from the syntax of the two languages. However, one difference needs to be highlighted. Rust encourages explicit error handling. Since this code will not be deployed to regular users, explicit error handling is not necessary and is avoided by using the '.unwrap()' function.
+
+One aspect of all Rust-specific tests is the [wasmbindgen] command before every function which is described by mdn web docks as follows "wasm-pack uses wasm-bindgen, another tool, to provide a bridge between the types of JavaScript and Rust. It allows JavaScript to call a Rust API with a string, or a Rust function to catch a JavaScript exception" (!Quelle mozilla compiling from rust to webassembly). This command is essential for the main.js to access the Rust functions when a test is triggered, therefore it is another important of this chapter. 
+Procedure The structure of each test case was identical. The respective test is started via a button, which opens a pop-up window in which the input for the test is entered. The input is then confirmed and the following code is executed:
+
+caption einfügen
+
+In order to allow a structured testing procedure, the tests were executed in the following order:
+
+The first test was started with an input of 100.000.000 and was repeated 10 times for JavaScript and 10 times for WASM.
+The second test was started with an input of 100.000.000 and was repeated 10 times for JavaScript and 10 times for WASM.
+We started the third test with an input of 30.000 and ran it five times each for JavaScript and for WASM.
+The result of each test is output via the command line and then recorded in a table. The table will be presented later on in the chapter results.
+
+In addition, the average runtime, standard deviation and factor by which WASM is executed faster or slower than JavaScript, relative to the average runtime, was calculated and added to the table.
+Research Project     The paper focuses on WASM. However, as Business Informatics students, we also aimed to explore professional collaboration in academic paper writing. We embraced the challenge of writing the paper using LaTeX, which required learning LaTeX syntax, setting up and structuring a LaTeX project, and understanding LaTeX source management.
+
+    Furthermore, the paper was collaboratively developed among the three researchers. We created a GitHub repository for the entire LaTeX project, just like for the experiment's code. This decision provided valuable insights and learnings which is important for our academic future since it is common practice in technical scientific papers to use LaTeX with a Git version control (!Quelle: actuarial, medium).
+
+    A consequence of these decisions was our agreement to work collectively in Microsoft Visual Studio Code using the 'LaTeX Workshop' plugin by James Yu, ensuring uniform technical capabilities among us. We considered an alternative, which was using Overleaf, an online LaTeX editor. However, this would have created costs for collaborative work, which we chose to avoid.
+
+    Subsequent chapters of this paper provide a more detailed analysis of LaTeX and GitHub, highlighting the challenges encountered during the process.
+Latex Project As mentioned earlier, we wanted to challenge ourselves by writing this paper in .  is based on the markup language TeX, originally developed by the American computer scientist Donald Knuth in 1982. The  framework used for this project is "a macro package built on top of TeX", intended to "simplify the typesetting of TeX" (!source: Wikibooks). Essentially, a  document is nothing more than a text document enriched with commands and markup.
+
+One of the main differences between  and conventional text editors such as Microsoft Word is that the author does not immediately see the result of what he is writing. Unlike MS Word, which operates on the principle of WYSIWYG (What You See Is What You Get),  operates on the principle of WYSIWYAF (What You See Is What You Asked For).
+
+Despite the significant drawback of requiring authors to learn how to use , the advantages outweigh the disadvantages. Wikibooks outlines the advantages of  as follows:
+
+- You can concentrate purely on the structure and contents of the document.  will automatically ensure that the typography of your document—fonts, text sizes, line heights, and other layout considerations—are consistent according to the rules you set.
+- In , the document structure is visible to the user, and can be easily copied to another document. In WYSIWYG applications it is often not obvious how a certain formatting was produced, and it might be impossible to copy it directly for use in another document.
+- Indexes, footnotes, citations and references are generated easily and automatically.
+- Mathematical formulae can be easily typeset. (Quality mathematics was one of the original motivations of TeX.)
+- Since the document source is plain text,
+    - Document sources can be read and understood with any text editor, unlike the complex binary and XML formats used with WYSIWYG programs.
+    - Tables, figures, equations, etc. can be generated programmatically with any language.
+    - Changes can be easily tracked with version control software.
+- Some academic journals only accept or strongly recommend submissions in the form of  documents. Publishers offer  templates.
+(!Source: Wikibooks).
+
+We found these points to be significant advantages in our work with , particularly the highly structured approach to document composition and the straightforward handling of sources.
+
+However, a simple  document would not suffice. The most effective use of  is to set up an entire  project, especially when different sections of the paper are written simultaneously by different contributors. Such a  project allows each part of the structure of the paper, such as chapters including all subchapters, to be divided into individual files. These individual files can then be worked on independently, as they are simply referenced within the existing structure (in our case, from a parent chapter file). This provides the flexibility to create the structure of the whole document without content, and then modify the structure without having to consider the content layout. Furthermore, as mentioned in the advantages of Wikibooks, it is possible to change aspects such as layout and font size centrally.
+
+That is why we decided to take on the challenge of writing this paper in . Now we will go into the detailed structure of our  project.
+
+Fortunately, we were able to adopt the general structure from Andy Grunwald, a former FOM student, who has published a "FOM  template  on GitHub (!Source: GitHub Repository). This template has many contributors and is continuously improved and adapted to FOM-specific requirements.
+
+In addition to providing the basic document structure, the template also provides various methods for compiling the associated PDF document for the project. This includes using the provided docker file or the compilation files together with the VS Code extension " Workshop  by James Yu.
+
+Now let's look at the basic structure of the  document itself. There is a main file called "thesismain.tex" which describes the basic configurations for the document, such as font size, font, margins, etc., and defines the structural layout of the thesis. This is done using the "
+input method, where the path to the referenced file is enclosed in curly braces. This provides a concise and easy to understand method of defining the structure.
+
+The content chapters are further encapsulated, each having its own "structure file" (e.g. chapterOverview.tex). This file references individual chapters, each of which can have its own respective structure. Here is an overview of the structure of the document:
+
+(!Darstellung einfügen)
+
+This ensures that the substantive parts (the chapters and subchapters) are separated from the more administrative parts, such as the table of contents. This clear separation is particularly helpful in academic papers where the style, such as numbering, may vary from section to section. With this clear separation, it is possible to apply different styles to each section.
+
+Certainly, other methods would be sufficient for a term project and would achieve similar or identical results. However, as mentioned earlier, we wanted to overcome this technical challenge so that we could use it for future projects.
+Github GitHub is a web-based version control system for software development that allows developers to manage their code in private or public repositories. Although there are many alternatives, such as GitLab, Bitbucket or SourceForge, we chose GitHub mainly because of its seamless integration with Microsoft Visual Studio Code, the chosen editor for this project.
+
+The benefits of a centralised version control are obvious. On the one hand, it allows the entire project to be managed in one place, ensuring that it is always the latest version. On the other hand, a GitHub repository, even if set to private, facilitates collaborative and platform-independent work on the project.
+
+In theory, GitHub's ability to create project and organisational structures could make it much easier to scale up research projects. In addition to managing such projects through Git pull and push requests, GitHub offers effective use of built-in features such as issues and discussions to challenge others' contributions, leading to the development of better and more refined ideas.
+
+However, to maintain the focus and scope of this paper, we have chosen to use GitHub exclusively as a version control system. There is a repository called "WASMvsJS" for the development of the experiment (!Quelle GitHub Repo), and another called "ITInfraPaper" for the  project (!Source GitHub Repo). Both repositories are publicly accessible and linked in the source directory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Results This chapter is dedicated to the presentation and description of the test results. Together with the literature review this chapter will lay a foundation for the later discussion on the aim of this research. The following tables contain the different results of all test runs. As described in the previous chapter, test one and test two were carried out for both JS and WASM with three different inputs of ten test runs each. Test three was also performed for both JS and WASM. In contrast to tests one and two, the entire test was carried out with five different inputs and only once with five test runs.
+All result tables have an identical structure. The header row shows the number of test runs and the header column shows the respective input, categorised by JS and WASM. In addition, there is an average and the standard deviation for each row. The first two tests were initially carried out with an input of 1,000,000. It was noticed that the results are not meaningful. Therefore the inputs have been gradually increased to reach an optimum in terms of runtime and credibility of the results. This approach identified 100,000,000 as the optimal input size for the first two tests. The same approach was used for the third test with a starting input of 100. This established optimum input for the third test at 30,000. From here on, we will therefore only deal with the results of the optimum input value.
+
+        []Table for results of test 1
+	    In the first test, the lowest value for the runtime of JS is 3666.74 ms and the highest value is 4250.09 ms. The average value is 3950.08 ms and the standard deviation is 224.16. For WASM, the lowest value is 1183.36 ms and the highest value is 1300.03 ms. The average value is 1208.36 ms and the standard deviation is 33.56.
+
+        []This is our website
+	    In the second test, the lowest value for the runtime of JS is 1750.04 ms and the highest value is 2050.04 ms. The average value is 1798.37 ms and the standard deviation is 90.42. For WASM, the lowest value is 366.67 ms and the highest value is 400.00 ms. The average value is 385.01 ms and the standard deviation is 12.30.
+
+        []This is our website
+	    In the last test, the lowest value for the runtime of JS is 13.3 s and the highest value is 14.1 s. The average value is 1798.37 ms and the standard deviation is 90.42. The average value is 13.66 s and the standard deviation is 0.36. For WASM, the lowest value is 12.0 s and the highest value is 12.2 s. The average value is 12.1 s and the standard deviation is 0.07.
+discussion The following chapter will discuss the previously described test results and argument whether or not they confirm or refuse the in chapter 3.2.1 defined null hypothesis. 
+
+In general, however, it can be said in advance that the results of this paper clearly show that WASM offers clear performance advantages in certain scenarios. In particular, when executing computationally intensive algorithms, WASM was able to demonstrate a significant improvement in CPU utilization and overall performance compared to JavaScript. This observation confirms the perception of WASM as an advanced technology that enables more efficient execution of code on web browsers. 
+A key aspect of our discussion is to analyze the underlying mechanisms that drive these performance differences. By examining CPU utilization patterns, memory consumption, and DOM manipulation efficiency, we were able to identify the specific strengths and weaknesses of WASM compared to JS. These findings provide a deep insight into the technical aspects of the two platforms and help to make informed decisions when choosing the appropriate technology for specific use cases.
+
+Hypothesis Test 1 The null hypothesis for the first comparison of JavaScript and WASM based on the CPU performance was "WASM Runtime is faster than JavaScript Runtime". Based on the results of the first test it can be said that WASM is about 3.27 times faster than JavaScript in executing the algorithm. Therefore the null hypothesis is confirmed and the alternate hypothesis is rejected. This result comes from the underlying technological advantage of WASM being low-level on the one hand and being compiled instead of interpreted on the other hand (vgl. Computerweekly definition).
+
+Hypothesis Test 2 The null hypothesis for the second test comparing JavaScript and WASM based on the speed of RAM read and write operations was "WASM Runtime is faster than JavaScript Runtime". Based on the results of the second test it can be said that WASM is about 4.67 times faster than JavaScript in executing the read and write operations. Therefore the null hypothesis is confirmed and the alternate hypothesis is rejected. As with the previous result, it again boils down to the underlying technological advantage of WASM being low-level on the one hand and being compiled instead of interpreted on the other hand (vgl. Computerweekly definition).
+
+Hypothesis Test 3 The null hypothesis for the last test comparing JavaScript and WASM based on the efficiency in which they executed DOM manipulation commands was "JavaScript Runtime is faster than WASM Runtime". Based on the results of the last test it can be said that, again, WASM is about 1.13 times faster than JavaScript in manipulating the DOM by adding div elements. In contrast to the tests before, this time the null hypothesis is rejected and the alternate hypothesis, which is "WASM Runtime is faster than JavaScript Runtime", is confirmed. Since our null hypothesis was rejected, further explanation is necessary. Initially, the null hypothesis was based on the difficulty that WASM, regardless of its computational advantage, needs to 'pass' its result through JavaScript to the DOM in order to manipulate it. Therefore it is rather surprising that the results show that WASM is still faster than JavaScript in this discipline.
+Conclusion In conclusion, the findings of this paper provides evidence for the performance advantages of WASM over JavaScript, particularly when executing computationally intensive algorithms. Through a series of tests and respective analyses, we have confirmed that WASM offers notable improvements in CPU utilization, memory efficiency, and overall performance compared to JavaScript.
+
+Two out of the three null hypothesis and one alternate hypothesis (which thought of WASM having a faster runtime) were confirmed, indicating that WASM runtime indeed outperforms JavaScript runtime across various performance metrics. This validation underscores the inherent technological advantages of WASM, including its low-level nature and compilation-based execution, which contribute to its superior performance characteristics. Furthermore, the unexpected result observed in the third test, where WASM showed faster DOM manipulation compared to JavaScript, highlights the complexity of performance evaluation in real-world scenarios. Despite WASM relying on JavaScript for DOM manipulation tasks, its inherent efficiencies shine through, suggesting subtle influences on performance outcomes. What determines those influence is matter to future research.
+
+Our discussion of the underlying mechanisms driving these performance differences, including CPU utilization patterns, memory consumption, and DOM manipulation efficiency, has provided valuable insights into the technical nuances of both WASM and JS platforms. These insights serve to inform developers and decision-makers when selecting the appropriate technology stack for specific use cases, enabling more informed choices and optimized performance outcomes. Overall, this study contributes to the growing body of research on Web Assembly and JavaScript performance, shedding light on their comparative advantages and limitations. By demonstrating the clear benefits of WASM in certain scenarios, we underscore its significance as an advanced technology that enables more efficient execution of code on web browsers, paving the way for enhanced web application performance and user experiences.
+
+As the landscape of web development continues to evolve, further exploration and refinement of Web Assembly's capabilities will be essential, offering continued opportunities for innovation and optimization in the field of client-side application development.
+
+
+
+
+ 
+ 
+
+
+
+
+tocdepth0 
+		toctocdepth2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[nottype=online,heading=bibintoc,title=LiteraturverzeichnisBibliography]
+
+
+
+
+
+
+
+
+[type=online,heading=subbibliography,title=]
+
+gobble 
+
+
+
+
+
+	Ehrenwörtliche Erklärung
+	Declaration in lieu of oath
+Hiermit versichere ich, dass die vorliegende Arbeit von mir selbstständig und ohne unerlaubte Hilfe angefertigt worden ist, insbesondere dass ich alle Stellen, die wörtlich oder annähernd wörtlich aus Veröffentlichungen entnommen sind, durch Zitate als solche gekennzeichnet habe. Ich versichere auch, dass die von mir eingereichte schriftliche Version mit der digitalen Version übereinstimmt. Weiterhin erkläre ich, dass die Arbeit in gleicher oder ähnlicher Form noch keiner Prüfungsbehörde/Prüfungsstelle vorgelegen hat. Ich erkläre mich damit , dass die Arbeit der Öffentlichkeit zugänglich gemacht wird. Ich erkläre mich damit einverstanden, dass die Digitalversion dieser Arbeit zwecks Plagiatsprüfung auf die Server externer Anbieter hochgeladen werden darf. Die Plagiatsprüfung stellt keine Zurverfügungstellung für die Öffentlichkeit dar.
+I hereby declare that I produced the submitted paper with no assistance from any other party and without the use of any unauthorized aids and, in particular, that I have marked as quotations all passages which are reproduced verbatim or near-verbatim from publications. Also, I declare that the submitted print version of this thesis is identical with its digital version. Further, I declare that this thesis has never been submitted before to any examination board in either its present form or in any other similar version. I herewith  that this thesis may be published. I herewith consent that this thesis may be uploaded to the server of external contractors for the purpose of submitting it to the contractors’ plagiarism detection systems. Uploading this thesis for the purpose of submitting it to plagiarism detection systems is not a form of publication.
+
+
+
+
+
+
+		* 
+
+
