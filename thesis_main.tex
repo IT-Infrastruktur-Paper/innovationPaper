@@ -49,15 +49,15 @@
 \usepackage{caption}
 \usepackage{enumitem}
 \usepackage{amssymb}
-\usepackage{mathptmx}
-% \usepackage{minted} %Kann für schöneres Syntax Highlighting genutzt werden. ACHTUNG: Python muss installiert sein.
+% \usepackage{mathptmx}
+\usepackage{minted} %Kann für schöneres Syntax Highlighting genutzt werden. ACHTUNG: Python muss installiert sein.
 \usepackage[scaled=0.9]{helvet} % Behebt, zusammen mit Package courier, pixelige Überschriften. Ist, zusammen mit mathptx, dem times-Package vorzuziehen. Details: https://latex-kurs.de/fragen/schriftarten/Times_New_Roman.html
 \usepackage{courier}
-\usepackage{amsmath}
+% \usepackage{amsmath}
 \usepackage[table]{xcolor}
 \usepackage{marvosym}			% Verwendung von Symbolen, z.B. perfektes Eurozeichen
 
-%\usepackage{scrhack} % behebt Warnungen und Fehlermeldungen
+\usepackage{scrhack} % behebt Warnungen und Fehlermeldungen
 
 \renewcommand\familydefault{\sfdefault}
 \usepackage{ragged2e}
@@ -286,6 +286,7 @@ mincrossrefs = 1
 % Kopfbereich / Header definieren
 %-----------------------------------
 \pagestyle{fancy}
+
 \fancyhf{}
 % Seitenzahl oben, mittig, mit Strichen beidseits
 % \fancyhead[C]{-\ \thepage\ -}
@@ -413,14 +414,15 @@ mincrossrefs = 1
 \printbibliography[nottype=online,heading=bibintoc,title={Quellenverzeichnis}]
 
 % neue Seite für Internetquellen-Verzeichnis
-\newpage
+% brauchen wir nur wenn wir die Qellen getrennt ausgeben wollen
+% \newpage
 
 % Laut Leitfaden 2018, S. 14, Fussnote 44 stehen die Internetquellen NICHT im
 % Inhaltsverzeichnis, sondern gehören zum Literaturverzeichnis.
 % Die Option heading=bibintoc würde die Internetquelle als eigenen Eintrag im
 % Inhaltsverzeicnis anzeigen.
 %\printbibliography[type=online,heading=bibintoc,title={\headingNameInternetSources}]
-\printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
+% \printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
 
 \input{chapter/appendices/declaration}
 \end{document}
