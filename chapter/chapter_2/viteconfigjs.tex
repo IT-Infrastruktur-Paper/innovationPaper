@@ -1,0 +1,5 @@
+Diese Datei ist abgelegt unter: „rfinnotrade/strapi/src/admin/vite.config.js“.
+Um zu erläutern, was in dieser Datei passiert, muss das grundlegende Prinzip von Cross-Origin Ressource Sharing (CORS) verstanden werden. CORS ist ein Sicherheitsmechanismus, welcher in Webbrowsern verwendet werden kann, um Zugriff auf Ressourcen von einer anderen Domain kontrolliert zulassen zu können. Daher auch der Begriff „Cross-Origin“. Es handelt sich hierbei um eine Erweiterung der standardmäßig verwendeten Same-Origin-Policy (SOP), welche Zugriffe nur von der selben Domain zulässt (Vgl. Cross-Origin Resource Sharing – Wikipedia, o. J.). In unserem Fall erlaubt diese Struktur also den Fremdzugriff auf Ressourcen innerhalb von Strapi.
+Diese Datei wird ebenfalls grundsätzlich von Strapi mitgeliefert und wurde von uns leicht angepasst. 
+HIER CODE EINFÜGEN
+In Zeile 13 und 14 erlauben wir jeglichen Domain Zugriff auf Strapi und geben zudem die Info mit, dass alle credentials weitergeleitet werden sollen. Hier könnte man auch weitere Restriktionen vornehmen, was von uns allerdings in der Datei „Middleware.js“ vorgenommen wurde.

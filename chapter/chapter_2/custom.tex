@@ -1,0 +1,19 @@
+Die nachfolgende Datei liegt unter „rfinnotrade/strapi/src/api/custom/controllers/custom.js“ und beinhaltet verschiedene Funktionen. Im Folgenden werde ich auf die Funktionen „login“, „logout“ und „checkAuthStatus“ eingehen, da diese im Kontext von Strapi und den bisher genannten Funktionen am relevantesten sind.
+
+Als erstes gehen wir auf die Login-Funktion ein. Diese Funktion erledigt die Aufgabe, den eigentlichen Login bei einer Login-Anfrage von der Admin Seite zu verifizieren, Daten aus Strapi abzufragen und darüber hinaus alle notwendigen Daten in den Cookies zu setzen.
+HIER CODE EINFÜGEN, NUR LOGIN FUNKTION
+Um diesen Vorgang zu realisieren, wird erneut der gesamte Webseitenkontext in Zeile 33 übergeben und daraus alle „request“-Daten in Zeile 34 geladen. Hier stehen unter anderem die Eingaben des Benutzers drin.
+Von Zeile 37 bis Zeile 45, wird die Funktion „sanitizeOutput“ deklariert, welche erst später angewendet wird.
+Ab Zeile 46 wird versucht mithilfe der übergebenen Login-Daten, eine Anfrage an Strapis eigentliche Login API durchzuführen. Ist diese Anfrage erfolgreich, werden die entsprechenden Benutzerdaten aus der Strapi Datenbank geladen, unter anderem die Benutzerrollen abgefragt.
+Ist alles erledigt, wird eine Cookie mit allen notwendigen Informationen zurückgegeben und in den Webseitenkontext geladen.
+Somit wurde die Login Abfrage erfolgreich über eine API durchgeführt und alle notwendigen Login Informationen anschließend in den Cookies der Webseite für weiter Abfragen gespeichert. Eine automatische Logout Funktion wurde in Zeile 68 ebenfalls großzügig implementiert. Diese würde spätestens nach 7 Tagen greifen, das Cookie auslaufen und der Logout somit automatisch erfolgen.
+
+Der ebenfalls implementierten Logout-Funktion wird zu Beginn erneut der Webseitenkontext übergeben.
+HIER CODE EINFÜGEN, NUR LOGOUT FUNKTION
+In Zeile 208 wird dann zunächst das Cookie aus dem Kontext ausgelesen und und das JWT auf „NULL“ gesetzt, wodurch der Logout theoretisch bereits erfolgt ist. Zusätzlich wird der automatische Logout, welcher in der Login Funktion auf 7 Tage gesetzt wird, auf den Wert 0 gesetzt.
+Dadurch löst sich das Cookie selber auf und der Logout würde ebenfalls erfolgen. Das Cookie wird am Ende wieder an den Webseitenkontext zurückgegeben.
+
+Die Funktion checkAuthStauts hat die Aufgabe, den aktuellen Login Status bei Aufruf dieser Funktion abzufragen. Diese Funktion ergänzt die Login- und Logout-Funktion also um eine weiter wichtige Funktionalität.
+Die Funktion ist ähnlich aufgebaut wie Login und Logout.
+HIER CODE EINFÜGEN, NUR CHECKAUTHSTATUS
+Sie prüft dabei zunächst ab, ob überhaupt ein JWT vorhanden ist. Sollte das nicht so sein, wird die Anfrage abgelehnt, da kein aktueller Login erfolgt ist. Sollte ein JWT vorhanden sein, wird dieses erneut verifiziert und der Benutzer kann, entsprechend seinen Berechtigungen, Anfragen durchführen.
