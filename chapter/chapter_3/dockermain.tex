@@ -1,3 +1,17 @@
 Für Docker und zur Erstellung von Containern ist jeweils im Frontend, Backend und in Sabbrands eine Dockerfile geschrieben, über die Docker Images erstellt werden. Sowohl Strapi im Backend, als auch alle Seiten im Frontend laufen jeweils in einem eigens isolierten Container. Die Container exposen dabei einen Port nach außen, um im Web erreichbar zu sein.
-HIER CODE EINFÜGEN, VON DOCKERFILE IM BACKEND
+
+\begin{lstlisting}[language=JavaScript, caption={Dockerfile Strapi}, label={lst:dockerfileStrapi}]
+FROM node:20              
+WORKDIR /usr/src/app      
+COPY package*.json ./     
+RUN npm install           
+COPY . .                  
+ENV NODE_ENV=production
+ENV ENV_PATH=./.env_prod
+RUN npm run strapi build
+RUN npm prune --production
+EXPOSE 1337      
+CMD ["npm", "run", "start"]
+\end{lstlisting}
+
 Hier sieht man eine beispielhafte Dockerfile für Strapi.
