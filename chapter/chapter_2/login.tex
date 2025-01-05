@@ -1,0 +1,11 @@
+Eine Seite, bzw. Komponente ist die Login Seite, welche unter „rfinnotrade/frontend/src/components/pages/Login.jsx“ abgelegt ist.
+Die Login.jsx Datei definiert die Login Seite unseres Frontends. Sie hat grundsätzlich die Funktion, den Benutzern die Anmeldung per E-Mail oder Benutzernamen mit dem dazugehörigen Passwort zu ermöglichen.
+HIER CODE EINFÜGEN, AB ZEILE 32 bis 73
+Das User-Interface (UI) ist ebenfalls hier implentiert und besteht aus einem Eingabefeld für die E-Mail und den Benutzernamen, einem Eingabefeld für das Passwort und einer Schaltfläche zum Absenden der Login-Daten. Wenn der Login fehlschlät, erscheint eine Fehlermeldung unterhalb des Formulars.
+Das Styling der Seite wird über eine ausgelagerte Login.css Datei gesteuert.
+Um den Login eines Benutzers durchzuführen, werden in der Login Komponente verschiedene Informationen verwaltet
+HIER CODE EINFÜGEN, AB ZEILE 9 bis 11 
+Wie hier zu sehen ist, verwaltet die Login Komponente password, identifiert und error, um die Logindaten oder Fehler bei der Anmeldung innerhalb der Komponente zu speichern und verarbeiten zu können.
+Sendet der Benutzer den Login per Schaltfläche ab, wird die Funktion „handleSubmit“ in Zeile 41 aufgerufen. Diese sendet einen POST-Request an die Login-API von Strapi, überprüft dort die Anmeldedaten und der Benutzer wird bei erfolg an die Admin-Seite der Webseite weitergeleitet.
+HIER CODE EINFÜGEN, AB ZEILE 17 bis 30
+Außerdem wird die Funktion „onLoginSuccess“ ausgeführt, damit der Authentifizierungsstatus des Benutzers aktualisiert wird.

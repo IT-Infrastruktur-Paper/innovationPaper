@@ -1,0 +1,16 @@
+Als nächstes gehen wir auf das Admin-Center ein, welches unter „rfinnotrade/frontend/src/components/pages/Sidebar.jsx“ gespeichert ist. Die Admin-Center Komponente stellt das Hauptverwaltungscenter für die Brands dar. Hier können neue Seiten erstellt, Seiteninhalte bearbeitet und laufende Docker-Container kontrolliert werden.
+Auch diese Komponente nutzt wieder verschiedene States.
+HIER CODE EINFÜGEN, ZEILE 14 bis 20
+Brands speichert die Liste aller erstellten Brands. Der State isModalOpen steuert die Sichtbarkeit des Modals zur Erstellung von neuen Seiten und newPage speichert die Daten der neuen Seite die erstellt werden soll ab. ActiveContainers enthält die Informationen zu aktuell laufenden Docker-Containern und pageFields speichert die Felder des content-types für Seiten.
+Innerhalb der Komponente sind außerdem verschiedenste Funktionen implementiert. Im Folgenden gehen wir auf drei wichtige Funktionen ein.
+fetchBrands:
+HIER CODE EINFÜGEN, ZEILE 22 bis 33
+Diese Funktion ruft die Liste der Brands über eine API ab und speichert diese dann im state brands. Nach dieser Vorgehensweise funktioniert auch fetchActiveContainers, zum abrufen und speichern der laufenden Container.
+HIER CODE EINFÜGEN, ZEILE 35 bis 46
+In Zeile 38 ist ein beispielhafter API-Endpunkt zu sehen. Das Frontend greift über diese API auf das Backend in Strapi zu und lädt von dort aus die laufenden Docker-Container. 
+fetchPageFields
+HIER CODE EINFÜGEN, ZEILE 48 bis 67
+Diese Funktion sorgt dafür, dass Felddefinitionen des Seiten-Content-Types sowie zugehörige Komponenten geladen und die Struktur der neuen Seite initialisiert werden. Dies ist also die Hauptfunktion, um die in den Feldern vom Benutzer eingetragenen Daten für die neue Seite zu übernehmen und die Initialisierung der neuen Brand zu starten.
+In der jsx Struktur ab Zeile 115 ist darüber hinaus wieder der eigentliche Aufbau des Frontends zu finden.
+HIER CODE EINFÜGEN, ZEILE 115 bis 162
+Der Aufbau der Webseite ist dabei grundsätzlich in zwei Teile unterteilt. Die eigentliche admin-center Seite und die darin integrierte brand-list.
