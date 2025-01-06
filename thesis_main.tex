@@ -363,15 +363,19 @@ mincrossrefs = 1
 %-----------------------------------
 % Abbildungsverzeichnis
 %-----------------------------------
-\listoffigures
 
+\listoffigures
+\renewcommand{\thepage}{\Roman{page}} % Römische Nummerierung sicherstellen
 \newpage
+
 %-----------------------------------
 % Tabellenverzeichnis - Hier missbraucht als Codeverzeichnis
 %-----------------------------------
 
 \renewcommand{\lstlistlistingname}{Codeverzeichnis}
 \lstlistoflistings
+\renewcommand{\thepage}{\Roman{page}} % Sicherstellen, dass die römische Nummerierung gilt
+\newpage
 
 %-----------------------------------
 % Seitennummerierung auf arabisch und ab 1 beginnend umstellen
