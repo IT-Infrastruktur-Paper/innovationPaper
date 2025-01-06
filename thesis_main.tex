@@ -8,8 +8,8 @@
 % of Content) aus.
 % Da es aber verschiedene Regelungen je nach Dozent geben kann, werden hier
 % beide Varianten dargestellt.
-\documentclass[12pt,oneside,titlepage,listof=totoc,bibliography=totoc]{scrartcl}
-%\documentclass[12pt,oneside,titlepage]{scrartcl}
+% \documentclass[12pt,oneside,titlepage,listof=totoc,bibliography=totoc]{scrartcl}
+\documentclass[12pt,oneside,titlepage]{scrartcl}
 
 %-----------------------------------
 % Dokumentensprache
@@ -145,18 +145,18 @@
 
 % Alternative Konfiguration für JavaScript Codehighlighting von ChatGPT
 \lstset{
-  language=JavaScript,                % JavaScript-Syntax
-  basicstyle=\ttfamily\small,         % Monospace-Schrift, klein
-  keywordstyle=\color{blue},          % Keywords in Blau
-  commentstyle=\color{green},         % Kommentare in Grün
-  stringstyle=\color{red},            % Strings in Rot
-  backgroundcolor=\color{lightgray},  % Hintergrundfarbe
-  numbers=left,                       % Zeilennummern links
-  numberstyle=\tiny\color{gray},      % Zeilennummern grau und klein
-  frame=single,                       % Rahmen um den Code
-  tabsize=2,                          % Tabulatorweite
-  showstringspaces=false,             % Leerzeichen in Strings nicht anzeigen
-  breaklines=true,                    % Lange Zeilen umbrechen
+  language=JavaScript,                 	 % JavaScript-Syntax
+  basicstyle=\ttfamily\small,          	 % Monospace-Schrift, klein
+  keywordstyle=\color{blue},           	 % Keywords in Blau
+  commentstyle=\color{green},         	 % Kommentare in Grün
+  stringstyle=\color{red},            	 % Strings in Rot
+  backgroundcolor=\color{lightgray}, 	 % Hintergrundfarbe
+  numbers=left,                      	 % Zeilennummern links
+  numberstyle=\tiny\color{gray},		 % Zeilennummern grau und klein
+  frame=single,                          % Rahmen um den Code
+  tabsize=2,                             % Tabulatorweite
+  showstringspaces=false,                % Leerzeichen in Strings nicht anzeigen
+  breaklines=true,                       % Lange Zeilen umbrechen
   morekeywords={useState,useEffect,props,import,export,from,return}, % Zusätzliche Schlüsselwörter
 }
 
@@ -369,6 +369,7 @@ mincrossrefs = 1
 %-----------------------------------
 % Tabellenverzeichnis - Hier missbraucht als Codeverzeichnis
 %-----------------------------------
+
 \renewcommand{\lstlistlistingname}{Codeverzeichnis}
 \lstlistoflistings
 
