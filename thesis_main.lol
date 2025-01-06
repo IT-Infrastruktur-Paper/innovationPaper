@@ -33,11 +33,9 @@
 \contentsline {lstlisting}{\numberline {31}{\ignorespaces Home.jsx}}{39}{lstlisting.31}%
 \contentsline {lstlisting}{\numberline {32}{\ignorespaces HeroSection.jsx}}{40}{lstlisting.32}%
 \contentsline {lstlisting}{\numberline {33}{\ignorespaces HeroSection.jsx}}{41}{lstlisting.33}%
-\contentsline {lstlisting}{\numberline {34}{\ignorespaces Middlewares.js}}{41}{lstlisting.34}%
-\babel@toc {ngerman}{}\relax 
-\babel@toc {ngerman}{}\relax 
-\babel@toc {ngerman}{}\relax 
-\babel@toc {ngerman}{}\relax 
+\contentsline {lstlisting}{\numberline {34}{\ignorespaces global.css}}{41}{lstlisting.34}%
+\contentsline {lstlisting}{\numberline {35}{\ignorespaces Flexbox}}{42}{lstlisting.35}%
+\contentsline {lstlisting}{\numberline {36}{\ignorespaces Middlewares.js}}{43}{lstlisting.36}%
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
