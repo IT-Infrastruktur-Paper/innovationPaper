@@ -398,7 +398,7 @@ mincrossrefs = 1
 		\renewcommand{\thesection}{\appendixname\ \arabic{section}}
 		\renewcommand{\thesubsection}{\appendixname\ \arabic{section}.\arabic{subsection}}
 		\renewcommand{\appendixtocname}{Anhang}
-		\input{chapter/appendices/appendices}
+		% \input{chapter/appendices/appendices}
 	\end{appendices}
 	\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
 
@@ -446,14 +446,14 @@ mincrossrefs = 1
 
 % neue Seite für Internetquellen-Verzeichnis
 % brauchen wir nur wenn wir die Qellen getrennt ausgeben wollen
-% \newpage
+\newpage
 
 % Laut Leitfaden 2018, S. 14, Fussnote 44 stehen die Internetquellen NICHT im
 % Inhaltsverzeichnis, sondern gehören zum Literaturverzeichnis.
 % Die Option heading=bibintoc würde die Internetquelle als eigenen Eintrag im
 % Inhaltsverzeicnis anzeigen.
 %\printbibliography[type=online,heading=bibintoc,title={\headingNameInternetSources}]
-% \printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
+\printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
 
-% \input{chapter/appendices/declaration}
+\input{chapter/appendices/declaration}
 \end{document}
