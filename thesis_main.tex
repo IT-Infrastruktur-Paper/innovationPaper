@@ -364,10 +364,14 @@ mincrossrefs = 1
 % Abbildungsverzeichnis
 %-----------------------------------
 \listoffigures
+
+\newpage
 %-----------------------------------
-% Tabellenverzeichnis
+% Tabellenverzeichnis - Hier missbraucht als Codeverzeichnis
 %-----------------------------------
-% \listoftables
+\renewcommand{\lstlistlistingname}{Codeverzeichnis}
+\lstlistoflistings
+
 %-----------------------------------
 % Seitennummerierung auf arabisch und ab 1 beginnend umstellen
 %-----------------------------------
@@ -383,7 +387,7 @@ mincrossrefs = 1
 %-----------------------------------
 \newpage
 \section*{Anhang} %Überschrift "Anhang", ohne Nummerierung
-\addcontentsline{toc}{section}{Appendices} %Den Anhang ohne Nummer zum Inhaltsverzeichnis hinzufügen
+\addcontentsline{toc}{section}{Anhang} %Den Anhang ohne Nummer zum Inhaltsverzeichnis hinzufügen
 
 \begin{appendices}
 	% Nachfolgende Änderungen erfolgten aufgrund von Issue 163

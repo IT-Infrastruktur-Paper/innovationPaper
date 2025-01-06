@@ -6,20 +6,20 @@ Diese Datei wird ebenfalls grundsätzlich von Strapi mitgeliefert und wurde von 
 const { mergeConfig } = require('vite');
 
 module.exports = (config) => {
-  // Important: always return the modified config
-  return mergeConfig(config, {
+    // Important: always return the modified config
+    return mergeConfig(config, {
     resolve: {
-      alias: {
+        alias: {
         '@': '/src',
-      },
+        },
     },
     server: {
-      cors: {
+        cors: {
         origin: true,
         credentials: true,
-      },
+        },
     },
-  });
+    });
 };
 \end{lstlisting}
 
