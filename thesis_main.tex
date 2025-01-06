@@ -72,6 +72,7 @@
 % Verhindert, dass nur eine Zeile auf der nächsten Seite steht
 \setlength{\marginparwidth}{2cm}
 \usepackage[all]{nowidow}
+\usepackage{appendix}
 
 \addto\captionsngerman{% Replace "english" with the language you use
 	\renewcommand{\contentsname}{Inhaltsverzeichnis}
@@ -80,6 +81,7 @@
 	\renewcommand{\appendixname}{Anhang}
 	\renewcommand{\figurename}{Abbildung}
 	\renewcommand{\tablename}{Tabelle}
+	\renewcommand{\appendixtocname}{Anhang}
 	\appendixtitleon    % puts \appendixname before each appendix title
 	%\renewcommand{\abbreHeadingName}{List of Abbreviations}
 }
@@ -391,6 +393,7 @@ mincrossrefs = 1
 	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}} %
 		\renewcommand{\thesection}{\appendixname\ \arabic{section}}
 		\renewcommand{\thesubsection}{\appendixname\ \arabic{section}.\arabic{subsection}}
+		\renewcommand{\appendixtocname}{Anhang}
 		\input{chapter/appendices/appendices}
 	\end{appendices}
 	\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
