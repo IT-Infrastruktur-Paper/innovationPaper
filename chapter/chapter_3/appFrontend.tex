@@ -19,7 +19,6 @@ return (
       </div>
     </Router>
   );
-}
 \end{lstlisting}
 
 Der „Router“ Bereich wird verwendet, um die Navigation zwischen verschiedenen Seiten zu ermöglichen. Die Routes innerhalb dieser Sektion definieren die konkret verfügbaren Seiten.
@@ -50,6 +49,7 @@ function App() {
     const toggleSidebar = () => {
       setIsOpen(!isOpen);
     };
+}
 \end{lstlisting}
 
 Außerdem wird in Zeile 2 der state „isAuthenticated“, also ein veränderbarer Zustand, erzeugt und mit false initialisiert. Dazu gehört die checkAuth Funktion, welche eine Anfrage an Strapi ins Backend zur Authentifizierungsüberprüfung sendet. Diese Funktion wird bei jedem Neuladen der Seite automatisch über die ebenfalls implementiert Funktion useEffect aufgerufen.

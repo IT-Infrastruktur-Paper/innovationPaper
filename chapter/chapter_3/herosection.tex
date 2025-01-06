@@ -13,6 +13,7 @@ useEffect(() => {
         setLoading(false);
         }
     };
+})
 \end{lstlisting}
 
 Dieser typische API-Aufruf kann grundsätzlich in allen Komponenten vorgenommen werden, um gewünschte Daten aus dem Strapi Backend zu laden.
@@ -30,7 +31,6 @@ return (
         )} 
     </div>
     );
-};
 \end{lstlisting}
 
 Der Ladezustand wird angezeigt, bis alle Inhalte erfolgreich geladen wurden. Erst dann werden die Inhalte gerendert und angezeigt.

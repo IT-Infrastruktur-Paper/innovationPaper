@@ -9,6 +9,7 @@ function AdminCenter() {
     const [newPage, setNewPage] = useState({});
     const [activeContainers, setActiveContainers] = useState([]);
     const [pageFields, setPageFields] = useState({});
+}
 \end{lstlisting}
 
 Brands speichert die Liste aller erstellten Brands. Der State isModalOpen steuert die Sichtbarkeit des Modals zur Erstellung von neuen Seiten und newPage speichert die Daten der neuen Seite die erstellt werden soll ab. ActiveContainers enthält die Informationen zu aktuell laufenden Docker-Containern und pageFields speichert die Felder des content-types für Seiten.
@@ -69,6 +70,8 @@ const fetchPageFields = async () => {
             processedFields[key] = field;
         }
         }
+    }
+}
 \end{lstlisting}
 
 Diese Funktion sorgt dafür, dass Felddefinitionen des Seiten-Content-Types sowie zugehörige Komponenten geladen und die Struktur der neuen Seite initialisiert werden. Dies ist also die Hauptfunktion, um die in den Feldern vom Benutzer eingetragenen Daten für die neue Seite zu übernehmen und die Initialisierung der neuen Brand zu starten.
@@ -121,7 +124,6 @@ return (
         </div>
     </div>
     );
-}
 \end{lstlisting}
 
 Der Aufbau der Webseite ist dabei grundsätzlich in zwei Teile unterteilt. Die eigentliche admin-center Seite und die darin integrierte brand-list.

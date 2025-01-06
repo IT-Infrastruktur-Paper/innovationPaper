@@ -46,6 +46,7 @@ export const renderField = (key, field, parentPath = '', newPage, setNewPage, se
         </div>
         );
     }
+}
 \end{lstlisting}
 
 Diese Funktion nutzt die geladenen Strukturen und erstellt dann tatsächlich und basierend auf den geladenen Strukturen die Eingabefelder im Formular. RenderFields wird zum Beispiel in BrandItem.jsx verwendet.
@@ -70,6 +71,8 @@ export const handleFileChange = async (e, fieldName, setNewPage, setError) => {
             },
         }
         );
+    }
+}
 \end{lstlisting}
 
 Auch hier erfolgt wieder die Kommunikation mit Strapi. Dieses Mal über die Strapi-Upload-API.
