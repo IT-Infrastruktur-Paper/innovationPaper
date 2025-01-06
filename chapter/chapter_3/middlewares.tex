@@ -10,7 +10,16 @@ module.exports = [
   name: 'strapi::cors',
     config: 
     {
-      origin: ['http://www.rf-innotrade.de','http://www.rf-innotrade.de:82', 'http://www.rf-innotrade.de:1338'],
+      origin: [
+        'http://www.rf-innotrade.de',
+        'http://rf-innotrade.de',
+        'http://www.rf-innotrade.de:82',
+        'http://rf-innotrade.de:82',
+        'http://www.rf-innotrade.de:1338',
+        'http://rf-innotrade.de:1338',
+        'http://www.rf-innotrade.de:8080',
+        'http://rf-innotrade.de:8080'
+      ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       keepHeaderOnError: true,
@@ -30,4 +39,4 @@ module.exports = [
 
 Die hier gezeigte Middleware.js, arbeitet die aufgeführten Middleware-Funktionen nacheinander und in genau dieser Reihenfolge ab. Somit wird sichergestellt, dass aufeinander aufbauende Funktionen auch in der richtigen Reihenfolge ausgeführt werden. Es ist außerdem noch wichtig zu erwähnen, dass dies Strapi Middleware-Funktionen sind, da wir uns nach wie vor innerhalb unserer Strapi Konfiguration befinden.
 Neben der Anmeldung unter unserer rf-innotrade.de Admin Seite oder für andere API-Calls, welche nur von einem angemeldeten Admin durchgeführt werden dürfen, ist diese Datei für die im vorherigen Kapitel erwähnte CORS-Konfiguration zuständig.
-Diese Konfiguration sorgt dafür, dass Authentifizierungsanfragen immer nur über die in Zeile 9 genannten Domains erlaubt sind und die Anfrage nur dann weiterverarbeitet werden darf.
+Diese Konfiguration sorgt dafür, dass Authentifizierungsanfragen immer nur über die in Zeile 14 bis 21 genannten Domains erlaubt sind und die Anfrage nur dann weiterverarbeitet werden darf.
