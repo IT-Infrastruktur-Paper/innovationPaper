@@ -16,5 +16,180 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{oa_firma_nodate}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c5bd6b1714874c8c77c4540d26d05b18}{%
+           family={o.A.},
+           familyi={o\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {de}%
+      }
+      \list{location}{1}{%
+        {\selectlanguage {ngerman}o\adddot \addspace O\adddot}%
+      }
+      \strng{namehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{fullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{bibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorbibnamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authornamehash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \strng{authorfullhash}{c5bd6b1714874c8c77c4540d26d05b18}
+      \field{sortinit}{o}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Für die Gründung eines Unternehmens musst du normalerweise viel Zeit und Aufwand einplanen. Denn eine Firmengründung geht sowohl…}
+      \field{journaltitle}{Lexware}
+      \field{shorttitle}{Firma online gründen}
+      \field{title}{Firma online gründen: {Voraussetzungen} \& {Ablauf}}
+      \field{urlday}{7}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Janis\\Zotero\\storage\\6LN8BNWP\\firma-online-gruenden.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.lexware.de/wissen/gruendung/firma-online-gruenden/
+      \endverb
+      \verb{url}
+      \verb https://www.lexware.de/wissen/gruendung/firma-online-gruenden/
+      \endverb
+    \endentry
+    \entry{vetterli_innovationsmethode_2012}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=64ccd4f74befe847a59f072c1bb5b02f}{%
+           family={Vetterli},
+           familyi={V\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ea6185c153600a83c411f404e15d4b9}{%
+           family={Brenner},
+           familyi={B\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3df7861ab18004fde039801677b379cf}{%
+           family={Uebernickel},
+           familyi={U\bibinitperiod},
+           given={Falk},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a105ef21b858ed0dacd662f94ff7db2}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Katharina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {de}%
+      }
+      \list{location}{1}{%
+        {\selectlanguage {ngerman}o\adddot \addspace O\adddot}%
+      }
+      \strng{namehash}{ac8cad460169fc5214d314f03e1ba2d9}
+      \strng{fullhash}{feebf1295b0c00d60499b5fe5b8b74a9}
+      \strng{bibnamehash}{feebf1295b0c00d60499b5fe5b8b74a9}
+      \strng{authorbibnamehash}{feebf1295b0c00d60499b5fe5b8b74a9}
+      \strng{authornamehash}{ac8cad460169fc5214d314f03e1ba2d9}
+      \strng{authorfullhash}{feebf1295b0c00d60499b5fe5b8b74a9}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{No description available}
+      \field{note}{Publisher: Symposion Publishing}
+      \field{title}{Die {Innovationsmethode} {Design} {Thinking}}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{289\bibrangedash 310}
+      \range{pages}{22}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Janis\\Zotero\\storage\\T6F5Y6VM\\Vetterli et al. - 2012 - Die Innovationsmethode Design Thinking.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.alexandria.unisg.ch/handle/20.500.14171/92970
+      \endverb
+      \verb{url}
+      \verb https://www.alexandria.unisg.ch/handle/20.500.14171/92970
+      \endverb
+    \endentry
+    \entry{wohlrabe_burokratie_2024}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=feb6816eee04b5eada891c317d4e9d4d}{%
+           family={Wohlrabe},
+           familyi={W\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a9de3d701400c79e6286c40fbff9673}{%
+           family={Licht},
+           familyi={L\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08b56a30309d09ea6f992d645bcba0e6}{%
+           family={Maltzan},
+           familyi={M\bibinitperiod},
+           given={Annette},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {ger}%
+      }
+      \list{location}{1}{%
+        {\selectlanguage {ngerman}o\adddot \addspace O\adddot}%
+      }
+      \list{publisher}{1}{%
+        {München: Stiftung Familienunternehmen}%
+      }
+      \strng{namehash}{36222d348c2eec01f093f8e2d76a7598}
+      \strng{fullhash}{36222d348c2eec01f093f8e2d76a7598}
+      \strng{bibnamehash}{36222d348c2eec01f093f8e2d76a7598}
+      \strng{authorbibnamehash}{36222d348c2eec01f093f8e2d76a7598}
+      \strng{authornamehash}{36222d348c2eec01f093f8e2d76a7598}
+      \strng{authorfullhash}{36222d348c2eec01f093f8e2d76a7598}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Wie ist das Verhältnis der Unternehmen zur öffentlichen Verwaltung in Deutschland? Für den "Jahresmonitor" hat das ifo Institut dazu fast 1800 Unternehmen befragt, davon rund 1400 Familienunternehmen verschiedenster Größe und Branchen. 57 Familienunternehmen in der Umfrage gehören den so genannten Top 500 an, haben also mindestens 2000 Mitarbeiter. Die 57 repräsentieren ein Umsatzvolumen von rund 92 Milliarden Euro und ein Personal von rund 400.000 Personen. Die Umfrage zeigt nicht nur, dass 90,8 Prozent der befragten Unternehmen eine Zunahme der bürokratischen Belastung seit 2022 feststellen. Sie unterstreicht auch die Bedeutung der Digitalisierung als Schlüssel zur Reduzierung bürokratischer Lasten. Unternehmen wünschen sich, mehr Verwaltungswege online abzuwickeln. Hilfreich wäre auch ein optimierter Datenaustausch zwischen den verschiedenen Verwaltungsebenen. Nur 5 Prozent der befragten Unternehmen geben an, dass sie mehr als 80 Prozent ihrer bürokratischen Anforderungen digital erledigen können. Ein besorgniserregender Aspekt, der in der Umfrage thematisiert wurde, ist die Auswirkung der Bürokratie auf Investitionsentscheidungen. Viele Unternehmen geben an, geplante Investitionen aufgrund bürokratischer Anforderungen zurückzustellen - in den vergangenen zwei Jahren waren es 45,6 Prozent der teilnehmenden Firmen, während 38,5 Prozent dies auch für die kommenden zwei Jahre erwarten.}
+      \field{isbn}{978-3-948850-52-4}
+      \field{shorttitle}{Bürokratie als {Wachstumsbremse}}
+      \field{title}{Bürokratie als {Wachstumsbremse}: {Bestandsaufnahme} und {Reformansätze}. {Jahresmonitor} der {Stiftung} {Familienunternehmen}}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Janis\\Zotero\\storage\\342HWGNY\\Wohlrabe et al. - 2024 - Bürokratie als Wachstumsbremse Bestandsaufnahme und Reformansätze. Jahresmonitor der Stiftung Famil.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.econstor.eu/handle/10419/307986
+      \endverb
+      \verb{url}
+      \verb https://www.econstor.eu/handle/10419/307986
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
