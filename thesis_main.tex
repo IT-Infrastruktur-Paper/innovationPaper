@@ -8,8 +8,8 @@
 % of Content) aus.
 % Da es aber verschiedene Regelungen je nach Dozent geben kann, werden hier
 % beide Varianten dargestellt.
-% \documentclass[12pt,oneside,titlepage,listof=totoc,bibliography=totoc]{scrartcl}
-\documentclass[12pt,oneside,titlepage]{scrartcl}
+\documentclass[12pt,oneside,titlepage,listof=totoc,bibliography=totoc]{scrartcl}
+% \documentclass[12pt,oneside,titlepage]{scrartcl}
 
 %-----------------------------------
 % Dokumentensprache
@@ -77,7 +77,7 @@
 \addto\captionsngerman{% Replace "english" with the language you use
 	\renewcommand{\contentsname}{Inhaltsverzeichnis}
 	\renewcommand{\listfigurename}{Abbildungsverzeichnis}
-	\renewcommand{\listtablename}{List of Tables}
+	\renewcommand{\listtablename}{Tabellenverzeichnis}
 	\renewcommand{\appendixname}{Anhang}
 	\renewcommand{\figurename}{Abbildung}
 	\renewcommand{\tablename}{Tabelle}
@@ -368,15 +368,22 @@ mincrossrefs = 1
 \renewcommand{\thepage}{\Roman{page}} % Römische Nummerierung sicherstellen
 \newpage
 
+% Tabellenverzeichnis
+%-----------------------------------
+
+\listoftables
+\renewcommand{\thepage}{\Roman{page}} % Sicherstellen, dass die römische Nummerierung gilt
+\newpage
+
 %-----------------------------------
 % Tabellenverzeichnis - Hier missbraucht als Codeverzeichnis
 %-----------------------------------
 
-\renewcommand{\lstlistlistingname}{Codeverzeichnis}
-\renewcommand{\numberline}[1]{\hspace{1.5em}#1\hspace{1em}} % Abstand anpassen
-\lstlistoflistings
-\renewcommand{\thepage}{\Roman{page}} % Sicherstellen, dass die römische Nummerierung gilt
-\newpage
+% \renewcommand{\lstlistlistingname}{Codeverzeichnis}
+% \renewcommand{\numberline}[1]{\hspace{1.5em}#1\hspace{1em}} % Abstand anpassen
+% \lstlistoflistings
+% \renewcommand{\thepage}{\Roman{page}} % Sicherstellen, dass die römische Nummerierung gilt
+% \newpage
 
 %-----------------------------------
 % Seitennummerierung auf arabisch und ab 1 beginnend umstellen
