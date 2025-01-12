@@ -44,6 +44,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Für die Gründung eines Unternehmens musst du normalerweise viel Zeit und Aufwand einplanen. Denn eine Firmengründung geht sowohl…}
+      \field{annotation}{Für Zitat Notarbesuch digital Handelsregister}
       \field{journaltitle}{Lexware}
       \field{shorttitle}{Firma online gründen}
       \field{title}{Firma online gründen: {Voraussetzungen} \& {Ablauf}}
@@ -60,6 +61,7 @@
       \verb{url}
       \verb https://www.lexware.de/wissen/gruendung/firma-online-gruenden/
       \endverb
+      \keyw{Nils}
     \endentry
     \entry{vetterli_innovationsmethode_2012}{article}{}
       \name{author}{4}{}{%
